@@ -16,6 +16,9 @@ import HelperStep4 from "./pages/register/HelperStep4";
 import HelperTraining from "./pages/register/HelperTraining";
 import HelperWelcome from "./pages/register/HelperWelcome";
 import Profile from "./pages/Profile";
+import HelpCategories from "./pages/HelpCategories";
+import CategoryDetail from "./pages/CategoryDetail";
+import HelperProfile from "./pages/HelperProfile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +49,11 @@ const App = () => (
           
           {/* Profile */}
           <Route path="/profile" element={<Profile />} />
+          
+          {/* Help Categories and Helper Profiles */}
+          <Route path="/help-categories" element={<HelpCategories />} />
+          <Route path="/help-category/:categoryId" element={<CategoryDetail />} />
+          <Route path="/helper/:helperId" element={<HelperProfile />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

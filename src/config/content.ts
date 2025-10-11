@@ -187,5 +187,46 @@ export const content = {
     reviews: "Atsauksmes",
     editButton: "Rediģēt profilu",
     supportButton: "Sazināties ar atbalstu"
+  },
+
+  helpCategories: {
+    title: "Izvēlies palīdzības jomu",
+    subtitle: "Atrod palīgu, kas atbilst tavām vajadzībām",
+    backButton: "Atpakaļ"
+  },
+
+  helpCards: {
+    household: {
+      title: "🧹 Mājas palīgs",
+      description: "Palīgs, kas palīdz uzturēt mājokli kārtībā un harmonijā.",
+      details: [
+        "tīrīšanu un organizēšanu (virsmas, skapji, telpas)",
+        "veļas kārtošanu, gludināšanu",
+        "ikdienas uzkopšanu un nelielus uzdevumus",
+        "palīdzību ar iepirkumiem un lietu kārtību mājās"
+      ],
+      ideal: "Ideāli piemērots aizņemtiem cilvēkiem, senioriem vai ģimenēm ar maziem bērniem, kuri vēlas sakārtotu un mierīgu vidi.",
+      pricing: {
+        basic: "Pamata vizīte (2h): 35 €",
+        extended: "Paplašinātais serviss (4h): 60 €"
+      },
+      discounts: [
+        "Abonements 1x nedēļā: 10% atlaide",
+        "Pirmais izmēģinājuma apmeklējums: -15%"
+      ]
+    }
+  },
+
+  helperPublicProfile: {
+    rating: "atsauksmes",
+    online: "Tiešsaistē",
+    aboutMe: "Par mani",
+    certificates: "Sertifikāti",
+    services: "Pakalpojumi",
+    availability: "Pieejamība",
+    reviews: "Atsauksmes",
+    reserveButton: "Rezervēt Palīgu",
+    askQuestionButton: "Uzdot Jautājumu",
+    backButton: "Atgriezties"
   }
 };
