@@ -117,7 +117,7 @@ const HelperStep1 = () => {
             className="w-full rounded-full"
             disabled={!formData.gdpr}
           >
-            🔘 {content.helperRegistration.step1.nextButton}
+            {content.helperRegistration.step1.nextButton}
           </Button>
         </form>
       </div>
