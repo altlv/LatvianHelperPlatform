@@ -115,7 +115,7 @@ const ClientStep1 = () => {
               onCheckedChange={(checked) => setFormData({...formData, gdpr: checked as boolean})}
             />
             <label htmlFor="gdpr" className="text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-              ☑️ {content.clientRegistration.step1.gdpr}
+              {content.clientRegistration.step1.gdpr}
             </label>
           </div>
 
@@ -126,7 +126,7 @@ const ClientStep1 = () => {
               onCheckedChange={(checked) => setFormData({...formData, ethics: checked as boolean})}
             />
             <label htmlFor="ethics" className="text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-              ☑️ {content.clientRegistration.step1.ethics}
+              {content.clientRegistration.step1.ethics}
             </label>
           </div>
 
