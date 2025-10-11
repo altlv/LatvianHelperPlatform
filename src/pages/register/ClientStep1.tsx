@@ -135,7 +135,7 @@ const ClientStep1 = () => {
             className="w-full rounded-full"
             disabled={!formData.gdpr || !formData.ethics}
           >
-            🔘 {content.clientRegistration.step1.nextButton}
+             {content.clientRegistration.step1.nextButton}
           </Button>
         </form>
       </div>
