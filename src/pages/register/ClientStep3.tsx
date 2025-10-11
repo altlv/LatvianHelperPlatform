@@ -47,7 +47,7 @@ const ClientStep3 = () => {
                 onCheckedChange={() => toggleTrait(trait)}
               />
               <label className="text-foreground cursor-pointer flex-1">
-                ☑️ {trait}
+                 {trait}
               </label>
             </div>
           ))}
@@ -70,7 +70,7 @@ const ClientStep3 = () => {
           onClick={handleSubmit}
           className="w-full rounded-full"
         >
-          🔘 {content.clientRegistration.step3.finishButton}
+          {content.clientRegistration.step3.finishButton}
         </Button>
       </div>
     </div>
