@@ -66,7 +66,7 @@ const ClientStep2 = () => {
           className="w-full rounded-full"
           disabled={selectedCategories.length === 0}
         >
-          🔘 {content.clientRegistration.step2.nextButton}
+          {content.clientRegistration.step2.nextButton}
         </Button>
       </div>
     </div>
