@@ -108,7 +108,7 @@ const HelperStep1 = () => {
               onCheckedChange={(checked) => setFormData({...formData, gdpr: checked as boolean})}
             />
             <label htmlFor="gdpr" className="text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-              ☑️ {content.helperRegistration.step1.gdpr}
+               {content.helperRegistration.step1.gdpr}
             </label>
           </div>
 
