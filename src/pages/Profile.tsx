@@ -50,10 +50,10 @@ const Profile = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-border">
             <Button className="flex-1 rounded-full">
-              🔘 {profile.editButton}
+              {profile.editButton}
             </Button>
             <Button variant="outline" className="flex-1 rounded-full">
-              🔘 {profile.supportButton}
+              {profile.supportButton}
             </Button>
           </div>
         </div>
