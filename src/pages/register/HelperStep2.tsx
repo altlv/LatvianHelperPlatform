@@ -32,7 +32,7 @@ const HelperStep2 = () => {
               onCheckedChange={(checked) => setEthics(checked as boolean)}
             />
             <label htmlFor="ethics" className="text-foreground font-medium cursor-pointer flex-1">
-              ☑️ {step2.ethicsTitle}
+              {step2.ethicsTitle}
             </label>
           </div>
 
@@ -43,7 +43,7 @@ const HelperStep2 = () => {
               onCheckedChange={(checked) => setGdpr(checked as boolean)}
             />
             <label htmlFor="gdpr" className="text-foreground font-medium cursor-pointer flex-1">
-              ☑️ {step2.gdprTitle}
+              {step2.gdprTitle}
             </label>
           </div>
 
@@ -60,7 +60,7 @@ const HelperStep2 = () => {
           className="w-full rounded-full"
           disabled={!ethics || !gdpr}
         >
-          🔘 {step2.finishButton}
+          {step2.finishButton}
         </Button>
       </div>
     </div>
