@@ -22,11 +22,11 @@ const HelperWelcome = () => {
 
         <div className="flex flex-col gap-4 pt-4">
           <Button asChild size="lg" className="rounded-full">
-            <Link to="/register/helper/step3">🔘 {welcome.specializationButton}</Link>
+            <Link to="/register/helper/step3">{welcome.specializationButton}</Link>
           </Button>
           
           <Button asChild variant="outline" size="lg" className="rounded-full">
-            <Link to="/profile">🔘 {welcome.profileButton}</Link>
+            <Link to="/profile"> {welcome.profileButton}</Link>
           </Button>
         </div>
       </div>
