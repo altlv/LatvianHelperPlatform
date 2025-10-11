@@ -76,7 +76,7 @@ const HelperStep3 = () => {
           className="w-full rounded-full"
           disabled={selectedCategories.length === 0}
         >
-          🔘 {content.helperRegistration.step3.nextButton}
+          {content.helperRegistration.step3.nextButton}
         </Button>
       </div>
     </div>
