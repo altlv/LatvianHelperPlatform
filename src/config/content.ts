@@ -26,7 +26,7 @@ export const content = {
     },
     {
       id: "practical",
-      title: "🧰 Praktiskie darbi Latvietim",
+      title: "🧰 Latvietis praktiskais",
       subtitle: "Remonti / tehniska palīdzība / dārzs",
       description:
         "Nelieli remontdarbi, tehniska palīdzība, dārza darbi un praktiskas uzdevumu atbalsts.",
