@@ -1,104 +1,93 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { content } from "@/config/content";
 
 const CategoryDetail = () => {
   const navigate = useNavigate();
-  const { categoryId } = useParams();
+  const { categorySlug } = useParams(); // URL: /search/:categorySlug
 
-  const category = content.clientRegistration.step2.categories.find(
-    (cat) => cat.id === categoryId
+  // Find the category by its id (slug in URL == category.id in content)
+  const category = content.categories.find((cat) => cat.id === categorySlug);
+
+  // All services (help cards) for this category
+  const services = content.helpCards.filter(
+    (h) => h.categoryId === categorySlug
   );
 
-  const helpCard = content.helpCards.household; // Example data
-
-  const helpers = [
-    { id: 1, name: "Anna L.", rating: 5, specialty: "īpaša uzmanība detaļām, pieredze ar ģimenēm ar bērniem" },
-    { id: 2, name: "Marija K.", rating: 4.8, specialty: "specializējas kārtošanā un tīrīšanā ar eko līdzekļiem" },
-    { id: 3, name: "Dace S.", rating: 4.9, specialty: "palīdz ar ikdienas rutīnu un organizēšanu" },
-    { id: 4, name: "Dainis S.", rating: null, specialty: "palīdz ar aizkrāmētu telpu atbrīvošanu, tīrīšanu un organizēšanu", isNew: true }
-  ];
-
   if (!category) {
-    return <div>Category not found</div>;
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center p-6">
+        <div className="max-w-xl text-center space-y-4">
+          <h1 className="text-2xl font-bold">Kategorija nav atrasta</h1>
+          <p className="text-muted-foreground">
+            Lūdzu, atgriezies iepriekšējā solī un mēģini vēlreiz.
+          </p>
+          <div className="flex gap-3 justify-center">
+            <Button variant="outline" onClick={() => navigate(-1)}>
+              ← Atpakaļ
+            </Button>
+            <Button asChild>
+              <Link to="/search">Uz kategorijām</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
     <div className="min-h-screen bg-background p-4">
       <div className="max-w-4xl mx-auto space-y-6 py-8">
-        <Button 
-          variant="ghost" 
-          onClick={() => navigate(-1)}
-          className="rounded-full"
-        >
-          ← {content.helpCategories.backButton}
-        </Button>
+        <div className="flex items-center gap-4">
+          <Button
+            variant="ghost"
+            onClick={() => navigate("/search")}
+            className="rounded-full"
+          >
+            ← {content.helpCategories?.backButton ?? "Atpakaļ uz kategorijām"}
+          </Button>
+        </div>
 
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-2xl">{helpCard.title}</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div>
-              <h3 className="font-semibold mb-2">📄 Apraksts</h3>
-              <p className="text-muted-foreground mb-3">{helpCard.description}</p>
-              <p className="text-sm font-medium mb-2">Ietver:</p>
-              <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                {helpCard.details.map((detail, index) => (
-                  <li key={index}>{detail}</li>
-                ))}
-              </ul>
-            </div>
+        <div className="text-center space-y-2">
+          <h1 className="text-3xl font-bold text-foreground">
+            {category.icon} {category.title}
+          </h1>
+          <p className="text-muted-foreground">
+            {content.helpCategories?.subtitle ?? "Izvēlies pakalpojumu"}
+          </p>
+        </div>
 
-            <div className="bg-accent/30 p-4 rounded-lg">
-              <p className="text-sm">💡 {helpCard.ideal}</p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-2">💶 Cena</h3>
-              <p className="text-sm">{helpCard.pricing.basic}</p>
-              <p className="text-sm">{helpCard.pricing.extended}</p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-2">🎁 Atlaides</h3>
-              {helpCard.discounts.map((discount, index) => (
-                <p key={index} className="text-sm text-muted-foreground">{discount}</p>
-              ))}
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4">👩‍🔧 Pieejamie palīgi</h3>
-              <div className="space-y-3">
-                {helpers.map((helper) => (
-                  <Card 
-                    key={helper.id}
-                    className="cursor-pointer hover:bg-accent/50 transition-colors"
-                    onClick={() => navigate(`/helper/${helper.id}`)}
-                  >
-                    <CardContent className="p-4">
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-1">
-                            <span className="font-semibold">{helper.name}</span>
-                            {helper.isNew ? (
-                              <span className="text-sm px-2 py-0.5 bg-primary/20 text-primary rounded-full">Jauns</span>
-                            ) : (
-                              <span className="text-sm">⭐ {helper.rating}</span>
-                            )}
-                          </div>
-                          <p className="text-sm text-muted-foreground">{helper.specialty}</p>
-                        </div>
-                        <Button variant="ghost" size="sm">→</Button>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        {/* Service cards for this category */}
+        <div className="grid md:grid-cols-2 gap-4">
+          {services.map((svc) => (
+            <Card
+              key={svc.slug}
+              className="cursor-pointer hover:bg-accent/50 transition-colors"
+              onClick={() => navigate(`/search/${category.id}/${svc.slug}`)}
+            >
+              <CardHeader>
+                <CardTitle className="text-xl">{svc.title}</CardTitle>
+                <CardDescription>{svc.description}</CardDescription>
+              </CardHeader>
+              {Array.isArray(svc.details) && svc.details.length > 0 && (
+                <CardContent>
+                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
+                    {svc.details.slice(0, 3).map((d, i) => (
+                      <li key={i}>{d}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              )}
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );
