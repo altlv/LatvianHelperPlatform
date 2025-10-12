@@ -1,12 +1,79 @@
 // Content configuration - Edit this file to change all text content
 export const content = {
   landing: {
-    title: "ŽANIS | ŽANNA",
-    subtitle: "Īstais cilvēks īstajam mirklim",
-    description: "Atbalsta un tālākizglītības platforma sirsnīgiem cilvēkiem, kuri vēlas būt noderīgi un kļūt par palīgu vai arī meklē sev palīgu dažādām ikdienas situācijām.",
-    loginButton: "PIESLĒGTIES",
-    registerButton: "REĢISTRĒTIES",
-    becomeHelperButton: "Kļūt par Palīgu"
+    title: "Palīgs | Atbalsts | Cilvēcība",
+    subtitle: "Tava drošā vieta, kur cilvēki palīdz viens otram – ar sirdi, prasmēm un cieņu.",
+    becomeHelperButton: "Pieteikties kā Palīgam",
+    findHelperButton: "Meklēt Palīgu",
+    
+    mission: {
+      title: "Kāpēc mēs pastāvam",
+      description: "Mēs ticam, ka Latvijā ir daudz sirsnīgu, uzticamu cilvēku, kas vēlas būt noderīgi – un citi, kam tieši šāds atbalsts ir vajadzīgs. Platforma savieno cilvēkus, kuri palīdz, ar cilvēkiem, kuri meklē palīdzību. Tas ir drošs, pārbaudīts un cilvēcīgs tīkls, kur cilvēks palīdz cilvēkam."
+    },
+    
+    safety: {
+      title: "Drošība un uzticība vispirms",
+      subtitle: "Mēs sargājam gan Palīgus, gan Klientus:",
+      features: [
+        { icon: "✅", text: "Verificēti profili – katrs Palīgs iziet identitātes pārbaudi" },
+        { icon: "📜", text: "Ētikas kodekss – skaidri noteikumi par cieņu un uzvedību" },
+        { icon: "⚖️", text: "Sankcijas par pārkāpumiem – brīdinājumi, profila apturēšana vai dzēšana" },
+        { icon: "🔒", text: "Privātuma aizsardzība – droša saziņa, dati netiek publiski izpausti" },
+        { icon: "🧠", text: "Apmācības – katrs Palīgs apgūst pamata kursu par empātiju, robežām un komunikāciju" }
+      ]
+    },
+    
+    education: {
+      title: "Attīstība un izglītība",
+      description: "Katrs Palīgs var piedalīties Žaņa akadēmijas apmācībās: komunikācija, sociālais darbs, improvizācija, pašaizsardzība un praktiskās iemaņas.",
+      note: "🎓 Palīdzība kļūst par profesiju. Pieredze kļūst par izaugsmi."
+    },
+    
+    benefits: {
+      title: "Ko iegūst cilvēki",
+      helpers: {
+        title: "Palīgiem:",
+        items: [
+          "Darbs ar jēgu un sirsnību",
+          "Apmācības un izaugsme",
+          "Sertifikācija un atsauksmes"
+        ]
+      },
+      clients: {
+        title: "Klientiem:",
+        items: [
+          "Droša, pārbaudīta palīdzība",
+          "Cilvēcīga pieeja, ne mehāniska apkalpošana",
+          "Personiska saderība pēc vērtībām un vajadzībām"
+        ]
+      }
+    },
+    
+    principles: {
+      title: "Kvalitātes un ētikas principi",
+      items: [
+        "Cieņa un empātija pret katru cilvēku",
+        "Godīgums un uzticība",
+        "Nulles tolerance pret agresiju vai diskrimināciju",
+        "Privātuma aizsardzība",
+        "Abpusēja mācīšanās un cieņa"
+      ],
+      warning: "🚫 Pārkāpumi tiek dokumentēti un var novest pie profila bloķēšanas vai līguma izbeigšanas."
+    },
+    
+    promise: {
+      title: "Mūsu solījums",
+      description: "Mēs esam tilts starp tiem, kam vajag palīdzību, un tiem, kas vēlas palīdzēt. Ar cieņu, drošību un cilvēcību kā pamatvērtībām. Mēs nesolām ideālus – mēs radām īstus kontaktus."
+    },
+    
+    footer: {
+      links: [
+        { text: "Ētikas kodekss", path: "/ethics" },
+        { text: "Privātuma politika", path: "/privacy" },
+        { text: "Par mums", path: "/about" },
+        { text: "Kontakti", path: "/contact" }
+      ]
+    }
   },
   
   clientRegistration: {
