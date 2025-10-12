@@ -26,25 +26,6 @@ const Landing = () => {
             {content.landing.subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button 
-              asChild
-              size="lg"
-              className="text-lg px-12 py-6 rounded-full w-full sm:w-auto"
-            >
-              <Link to="/register/helper">{content.landing.becomeHelperButton}</Link>
-            </Button>
-            
-            <Button 
-              asChild
-              size="lg"
-              variant="secondary"
-              className="text-lg px-12 py-6 rounded-full w-full sm:w-auto"
-            >
-              <Link to="/meklet">{content.landing.findHelperButton}</Link>
-            </Button>
-          </div>
-
           {/* Demo Mode Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-6 border-t mt-8 pt-8">
             <p className="text-sm text-foreground/60 w-full sm:w-auto text-center">Demo režīms:</p>
