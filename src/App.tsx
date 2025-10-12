@@ -16,7 +16,6 @@ import ClientWelcome from "./pages/register/ClientWelcome";
 
 import HelperStep1 from "./pages/register/HelperStep1";
 import HelperStep2 from "./pages/register/HelperStep2";
-import HelperStep2 from "./pages/register/HelperStep2";
 import HelperStep3 from "./pages/register/HelperStep3";
 import HelperStep4 from "./pages/register/HelperStep4";
 import HelperTraining from "./pages/register/HelperTraining";
@@ -39,19 +38,16 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          {/* Landing & legal */}
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/ethics" element={<Ethics />} />
           <Route path="/privacy" element={<Privacy />} />
 
-          {/* Client registration */}
           <Route path="/register/client" element={<ClientStep1 />} />
           <Route path="/register/client/step2" element={<ClientStep2 />} />
           <Route path="/register/client/step3" element={<ClientStep3 />} />
           <Route path="/register/client/welcome" element={<ClientWelcome />} />
 
-          {/* Helper registration */}
           <Route path="/register/helper" element={<HelperStep1 />} />
           <Route path="/register/helper/step2" element={<HelperStep2 />} />
           <Route path="/register/helper/step3" element={<HelperStep3 />} />
@@ -59,10 +55,8 @@ const App = () => (
           <Route path="/register/helper/training" element={<HelperTraining />} />
           <Route path="/register/helper/welcome" element={<HelperWelcome />} />
 
-          {/* Profile */}
           <Route path="/profile" element={<Profile />} />
 
-          {/* Help & Search flow */}
           <Route path="/help-categories" element={<HelpCategories />} />
           <Route path="/help-category/:categoryId" element={<CategoryDetail />} />
 
@@ -70,14 +64,11 @@ const App = () => (
           <Route path="/search/:categorySlug" element={<CategoryDetail />} />
           <Route path="/search/:categorySlug/:serviceSlug" element={<ServiceDetail />} />
 
-          {/* Backwards alias (if needed) */}
           <Route path="/meklet" element={<Navigate to="/search" replace />} />
 
-          {/* Helper profile */}
           <Route path="/paligs/:helperId" element={<HelperProfile />} />
           <Route path="/helper/:helperId" element={<HelperProfile />} />
 
-          {/* Fallback */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
