@@ -30,18 +30,7 @@ const Landing = () => {
 
           {/* Demo & CTA Section */}
           <div className="flex flex-wrap gap-4 justify-center mt-8">
-            <Button
-              asChild
-              className="bg-[#D4AF37] hover:bg-[#C19A2E] text-black font-semibold rounded-xl shadow-sm px-6 py-3 transition"
-            >
-              <Link to="/meklet">Meklēt Palīgu</Link>
-            </Button>
-            <Button
-              asChild
-              className="bg-[#D4AF37] hover:bg-[#C19A2E] text-black font-semibold rounded-xl shadow-sm px-6 py-3 transition"
-            >
-              <Link to="/register/helper">Pieteikties kā Palīgam</Link>
-            </Button>
+            
             <Button
               variant="outline"
               className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-semibold rounded-xl px-6 py-3 transition"
