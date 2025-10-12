@@ -29,13 +29,26 @@ const Landing = () => {
           {/* Demo Mode Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-6 border-t mt-8 pt-8">
             <p className="text-sm text-foreground/60 w-full sm:w-auto text-center">Demo režīms:</p>
-            <Button className="bg-[#D4AF37] hover:bg-[#C19A2E] text-black font-medium rounded-xl shadow-sm px-6 py-2 transition">
+<Button
+  onClick={() => {
+    localStorage.setItem('demoRole', 'client');
+    window.location.href = '/meklet';
+  }}
+  className="bg-[#D4AF37] hover:bg-[#C19A2E] text-black font-medium rounded-xl shadow-sm px-6 py-2 transition w-full sm:w-auto"
+>
   Pieslēgties kā klients (demo)
 </Button>
 
-<Button className="bg-[#D4AF37] hover:bg-[#C19A2E] text-black font-medium rounded-xl shadow-sm px-6 py-2 transition">
+<Button
+  onClick={() => {
+    localStorage.setItem('demoRole', 'helper');
+    window.location.href = '/paligs/dainis-sprogis';
+  }}
+  className="bg-[#D4AF37] hover:bg-[#C19A2E] text-black font-medium rounded-xl shadow-sm px-6 py-2 transition w-full sm:w-auto"
+>
   Pieslēgties kā palīgs (demo)
 </Button>
+
 
           </div>
         </div>
