@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "anna-lapina",
+    "name": "Anna Lapiņa",
+    "rating": 5.0,
+    "reviewsCount": 47,
+    "region": "Rīga",
+    "online": true,
+    "specializations": ["Mājas palīgs", "Organizēšana", "Iepirkšanās asistents"],
+    "about": "Īpaša uzmanība detaļām, mierīga un precīza komunikācija. Palīdzu uzturēt kārtību un radīt sistēmu ikdienā.",
+    "certs": ["Mājsaimniecības tehniskā palīdzība", "Pirmās palīdzības pamati"],
+    "services": [
+      {"title":"Mājas palīgs (2h)","price":"35 €"},
+      {"title":"Mājas palīgs (4h)","price":"60 €"}
+    ],
+    "discounts": ["Pirmajai reizei -15%", "Abonements 1x nedēļā: -10%"],
+    "availability": ["Otrdiena 9:00–14:00","Ceturtdiena 13:00–18:00","Sestdiena 10:00–15:00"],
+    "reviews": [
+      {"text":"Ļoti kārtīga un sirsnīga palīdze. Palīdzēja sakārtot māju un rutīnu.","author":"Maija K."},
+      {"text":"Ļoti precīza un patīkama komunikācijā.","author":"Andris P."}
+    ],
+    "icon": "🧹"
+  },
+  {
+    "slug": "marija-karklina",
+    "name": "Marija Kārkliņa",
+    "rating": 4.8,
+    "reviewsCount": 32,
+    "region": "Rīga",
+    "online": false,
+    "specializations": ["Eko tīrīšana", "Skapju kārtošana"],
+    "about": "Tīrīšana ar videi draudzīgiem līdzekļiem un ilgtspējīgu pieeju.",
+    "certs": ["Eko tīrīšanas pamati"],
+    "services": [
+      {"title":"Eko mājas tīrīšana (2h)","price":"40 €"},
+      {"title":"Skapju kārtošana (h)","price":"30 €"}
+    ],
+    "discounts": ["Atkārtotiem klientiem -10%"],
+    "availability": ["Trešdiena 12:00–18:00","Piektdiena 10:00–14:00"],
+    "reviews": [{"text":"Ļoti patika eko pieeja un rezultāts.","author":"Ilze"}],
+    "icon": "🧴"
+  },
+  {
+    "slug": "dace-silmale",
+    "name": "Dace Silmale",
+    "rating": 4.9,
+    "reviewsCount": 21,
+    "region": "Sigulda",
+    "online": true,
+    "specializations": ["Rutīnas organizēšana", "Senioru atbalsts"],
+    "about": "Palīdz ikdienas rutīnā, veido mierīgu ritmu un drošu vidi.",
+    "certs": ["Komunikācija un empātija"],
+    "services": [{"title":"Rutīnas organizēšana (h)","price":"28 €"}],
+    "discounts": [],
+    "availability": ["Pirmdiena 10:00–16:00","Ceturtdiena 9:00–12:00"],
+    "reviews": [{"text":"Mierīga un ļoti atbalstoša.","author":"Zane"}],
+    "icon": "🧺"
+  },
+  {
+    "slug": "dainis-sprogis",
+    "name": "Dainis Sproģis",
+    "rating": 4.8,
+    "reviewsCount": 23,
+    "region": "Ogre",
+    "online": true,
+    "specializations": ["Praktiskie darbi", "Telpu organizēšana"],
+    "about": "Nelieli remonti un kārtošana: garāžas, pieliekamie, mēbeļu salikšana.",
+    "certs": ["Pamata drošība praktiskos darbos", "Pirmā palīdzība"],
+    "services": [
+      {"title":"Nelieli remontdarbi (2h)","price":"40 €"},
+      {"title":"Telpu organizēšana (h)","price":"30 €"}
+    ],
+    "discounts": ["Kombinētais pakalpojums -10%"],
+    "availability": ["Otrdiena 10:00–19:00","Sestdiena pēc vienošanās"],
+    "reviews": [{"text":"Sakārtoja garāžu, viss savās vietās.","author":"Inese"}],
+    "icon": "🧰"
+  }
+]

@@ -41,7 +41,35 @@ const Landing = () => {
               variant="secondary"
               className="text-lg px-12 py-6 rounded-full w-full sm:w-auto"
             >
-              <Link to="/help-categories">{content.landing.findHelperButton}</Link>
+              <Link to="/meklet">{content.landing.findHelperButton}</Link>
+            </Button>
+          </div>
+
+          {/* Demo Mode Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-6 border-t mt-8 pt-8">
+            <p className="text-sm text-foreground/60 w-full sm:w-auto text-center">Demo režīms:</p>
+            <Button 
+              variant="outline"
+              size="sm"
+              className="rounded-full w-full sm:w-auto"
+              onClick={() => {
+                localStorage.setItem('demoRole', 'client');
+                window.location.href = '/meklet';
+              }}
+            >
+              Pieslēgties kā klients (demo)
+            </Button>
+            
+            <Button 
+              variant="outline"
+              size="sm"
+              className="rounded-full w-full sm:w-auto"
+              onClick={() => {
+                localStorage.setItem('demoRole', 'helper');
+                window.location.href = '/paligs/dainis-sprogis';
+              }}
+            >
+              Pieslēgties kā palīgs (demo)
             </Button>
           </div>
         </div>

@@ -21,6 +21,7 @@ import Profile from "./pages/Profile";
 import HelpCategories from "./pages/HelpCategories";
 import CategoryDetail from "./pages/CategoryDetail";
 import HelperProfile from "./pages/HelperProfile";
+import Search from "./pages/Search";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -58,6 +59,10 @@ const App = () => (
           <Route path="/help-categories" element={<HelpCategories />} />
           <Route path="/help-category/:categoryId" element={<CategoryDetail />} />
           <Route path="/helper/:helperId" element={<HelperProfile />} />
+          
+          {/* Search and Dynamic Helper Profile */}
+          <Route path="/meklet" element={<Search />} />
+          <Route path="/paligs/:helperId" element={<HelperProfile />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
