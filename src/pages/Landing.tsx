@@ -146,14 +146,7 @@ const Landing = () => {
               Ar cieņu, drošību un cilvēcību kā pamatvērtībām. <br />
               Mēs nesolām ideālus – mēs radām īstus kontaktus.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 mt-6">
-              <Button className="bg-[#D4AF37] hover:bg-[#C19A2E] text-black font-semibold rounded-xl shadow-sm px-6 py-3 transition">
-                Pieteikties kā Palīgam
-              </Button>
-              <Button className="bg-[#D4AF37] hover:bg-[#C19A2E] text-black font-semibold rounded-xl shadow-sm px-6 py-3 transition">
-                Meklēt Palīgu
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
