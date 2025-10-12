@@ -26,7 +26,7 @@ const HelperProfile = () => {
               Diemžēl šis profils neeksistē vai vairs nav pieejams.
             </p>
             <Button asChild className="rounded-full">
-              <a href="/meklet">Atgriezties uz meklēšanu</a>
+              <a href="/search">Atgriezties uz meklēšanu</a>
             </Button>
           </CardContent>
         </Card>

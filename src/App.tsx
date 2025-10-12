@@ -61,7 +61,7 @@ const App = () => (
           <Route path="/helper/:helperId" element={<HelperProfile />} />
           
           {/* Search and Dynamic Helper Profile */}
-          <Route path="/meklet" element={<Search />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/paligs/:helperId" element={<HelperProfile />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
