@@ -21,7 +21,7 @@ const Landing = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-            {content?.landing?.title ?? "Palīgs | Atbalsts | Cilvēcība"}
+            {content?.landing?.title ?? "Atbalsts | Sirsnība"}
           </h1>
           
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
