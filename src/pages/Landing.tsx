@@ -147,17 +147,15 @@ const Landing = () => {
   </div>
 </section>
 
-{/* Footer */}
-<footer className="py-10 border-t border-foreground/10 mt-16">
-  <div className="flex flex-wrap justify-center gap-6 text-sm text-foreground/70">
-    <Link to="/ethics">Ētikas kodekss</Link>
-    <Link to="/privacy">Privātuma politika</Link>
-    <Link to="/about">Par mums</Link>
-    <Link to="/contact">Kontakti</Link>
-  </div>
-</footer>
-
-      </section>
+      {/* Footer */}
+      <footer className="py-10 border-t border-foreground/10 mt-16">
+        <div className="flex flex-wrap justify-center gap-6 text-sm text-foreground/70">
+          <Link to="/ethics">Ētikas kodekss</Link>
+          <Link to="/privacy">Privātuma politika</Link>
+          <Link to="/about">Par mums</Link>
+          <Link to="/contact">Kontakti</Link>
+        </div>
+      </footer>
       {/* ...rest of the file unchanged... */}
     </div>
   );
