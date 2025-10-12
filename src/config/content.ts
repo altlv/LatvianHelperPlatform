@@ -1,7 +1,7 @@
 // Content configuration - Edit this file to change all text content
 export const content = {
   landing: {
-    title: "Palīgs | Atbalsts | Cilvēcība",
+    title: "Palīgs | Atbalsts | Sirsnība",
     subtitle: "Tava drošā vieta, kur cilvēki palīdz viens otram – ar sirdi, prasmēm un cieņu.",
     becomeHelperButton: "Pieteikties kā Palīgam",
     findHelperButton: "Meklēt Palīgu",
