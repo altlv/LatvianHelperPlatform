@@ -3,7 +3,7 @@ export const content = {
     {
       id: "household",
       title: "🧺 Ikdienas saimnieciskie darbi",
-      subtitle: "Mājas darbi / organizēšana / bērni / iepirkumi",
+      subtitle: "Mājas darbi / Organizēšana / Bērnu aprūpe / Iepirkumi",
       description:
         "Tīrīšana, kārtošana, organizēšana, bērnu aprūpe un sadzīves atbalsts — ikdienas atvieglojums mājās.",
       icon: "🏠",
@@ -11,7 +11,7 @@ export const content = {
     {
       id: "health",
       title: "💪 Veselība un labsajūta",
-      subtitle: "Sports / relaksācija / kustība",
+      subtitle: "Sports / Fizioterapija / Relaksācija",
       description:
         "Treniņu motivācija, labsajūtas atbalsts, elpošanas prakses un kopīga kustība.",
       icon: "💚",
@@ -19,7 +19,7 @@ export const content = {
     {
       id: "social",
       title: "🎨 Sociālais un radošais atbalsts",
-      subtitle: "Sarunas / hobiji / emocionālais atbalsts",
+      subtitle: "Sarunas / Hobiji / Emocionālais atbalsts",
       description:
         "Kopības brīži, sarunu biedri, emocionālais atbalsts un radošs laiks kopā.",
       icon: "🤗",
@@ -27,7 +27,7 @@ export const content = {
     {
       id: "practical",
       title: "🧰 Latvietis praktiskais",
-      subtitle: "Remonti / tehniska palīdzība / dārzs",
+      subtitle: "Remonti / Amatniecība / Dārzs un Mājas",
       description:
         "Nelieli remontdarbi, tehniska palīdzība, dārza darbi un praktiskas uzdevumu atbalsts.",
       icon: "🔧",
@@ -35,7 +35,7 @@ export const content = {
     {
       id: "culture",
       title: "🎭 Kultūra un sabiedrība",
-      subtitle: "Pasākumi / sarunas / kopīgas aktivitātes",
+      subtitle: "Kultūras pasākumi / Filosofija / Kopīgas aktivitātes",
       description:
         "Kopīga došanās uz pasākumiem, kultūras sarunas, pavadīšana un sabiedriskās aktivitātes.",
       icon: "🎭",
@@ -49,10 +49,10 @@ export const content = {
       title: "🧹 Mājas palīgs",
       description: "Palīgs, kas palīdz uzturēt mājokli kārtībā un harmonijā.",
       details: [
-        "tīrīšana (putekļošana, slaucīšana, vakumēšana)",
-        "skapju un skapju organizēšana",
-        "veļas kārtošana, gludināšana",
-        "iepirkumu palīdzība un mājas uzdevumi",
+        "Tīrīšana (putekļošana, slaucīšana, vakumēšana)",
+        "Skapju un skapju organizēšana",
+        "Veļas mazgāšana, gludināšana",
+        "Palīdzība ar iepirkumiem un atbalts ikdienas mājas darbos",
       ],
       ideal: "Ģimenes, aizņemtie profesionāļi, seniori.",
       pricing: { basic: "2h — 35 €", extended: "4h — 60 €" },
@@ -67,11 +67,11 @@ export const content = {
       title: "🧺 Mājas organizators",
       description: "Kārtošanas un organizēšanas pakalpojumi skapjos un pieliekamos.",
       details: [
-        "skapju un plauktu kārtošana",
-        "etiķešu marķēšana un sistematizācija",
-        "dokumentu un lietu kārtošana",
+        "Skapju un plauktu kārtošana",
+        "Objektu marķēšana un sistematizācija",
+        "Dokumentu kārtošana un lietvedība",
       ],
-      ideal: "Ikviens, kas vēlas noturīgu kārtību.",
+      ideal: "Ikviens, kas vēlas strukturētu kārtību mājās no A - Z.",
       pricing: { basic: "No 30 € / h" },
       discounts: ["Kombinē ar Mājas palīgu –10 %"],
     },
@@ -81,10 +81,10 @@ export const content = {
       title: "🧴 Eko mājas tīrīšana",
       description: "Videi draudzīga tīrīšana bez agresīviem ķimikālijām.",
       details: [
-        "tīrīšana ar dabīgiem līdzekļiem",
-        "droši risinājumi bērniem un mājdzīvniekiem",
+        "Tīrīšana ar dabīgiem līdzekļiem",
+        "Droši risinājumi bērniem un mājdzīvniekiem",
       ],
-      ideal: "Veselības apzinīgi klienti.",
+      ideal: "Ģimenēm ar alerģijām, dabas draugiem",
       pricing: { basic: "2h — 40 €" },
       discounts: ["Atkārtotiem klientiem –10 %"],
     },
@@ -94,8 +94,9 @@ export const content = {
       title: "💪 Fitnesa draugs",
       description: "Kustību motivācija, kopīgi treniņi un aktivitātes.",
       details: [
-        "vieglie treniņi vai pastaigas",
-        "kustību rutīna un atbalsts",
+        "Vieglie treniņi vai pastaigas",
+        "Kustību rutīna un atbalsts",
+        "Sporta terapija",
       ],
       ideal: "Vēlies kļūt aktīvāks vai saglabāt formu.",
       pricing: { basic: "No 25 € / h" },
@@ -106,8 +107,9 @@ export const content = {
       title: "🧘 Labsajūtas atbalsts",
       description: "Elpošanas vingrinājumi, relaksācija un mierīgas prakses.",
       details: [
-        "elpošanas un meditācijas prakses",
-        "relaksācijas sesijas",
+        "Elpošanas un meditācijas prakses",
+        "Relaksācijas sesijas",
+        "Sertificētas masāžas",
       ],
       ideal: "Stressa mazināšanai un labākam miegam.",
       pricing: { basic: "No 25 € / h" },
@@ -115,9 +117,9 @@ export const content = {
     {
       slug: "emocionalais-draugs",
       categoryId: "social",
-      title: "🧠 Emocionālais draugs",
+      title: "🧠 Empātisks draugs",
       description: "Empātiskas sarunas un emocionālā klātbūtne (bez terapijas).",
-      details: ["klausīšanās, sarunas par dzīvi un emocijām"],
+      details: ["Uzklausīšana, sarunas par dzīvi un emocijām"],
       ideal: "Tiem, kas vēlas izrunāties vai saņemt saturīgu atbalstu.",
       pricing: { basic: "25 € / h", packages: ["4 sesijas — 85 €"] },
       discounts: ["Pirmā sesija –20 %"],
@@ -127,7 +129,7 @@ export const content = {
       categoryId: "social",
       title: "🎨 Radošais partneris",
       description: "Kopīgas radošas aktivitātes kā zīmēšana, mūzika, lasīšana.",
-      details: ["radošās nodarbības", "kopīga kultūras pieredze"],
+      details: ["Radošās nodarbības", "Kopīga kultūras pieredze"],
       ideal: "Vēlies iedvesmoties un radīt kopā.",
       pricing: { basic: "No 20 € / h" },
     },
@@ -137,8 +139,8 @@ export const content = {
       title: "🧰 Nelieli remontdarbi",
       description: "Nelieli mājas labojumi, mēbeļu sastiprināšana, dārza palīgs.",
       details: [
-        "mēbeļu montāža un nostiprināšana",
-        "sīki remontdarbi mājoklī",
+        "Mēbeļu montāža un nostiprināšana",
+        "Sīki remontdarbi mājoklī",
       ],
       ideal: "Pasūtījumi mājokļa vajadzībām.",
       pricing: { basic: "40 € / 2h" },
@@ -149,7 +151,7 @@ export const content = {
       categoryId: "practical",
       title: "📦 Telpu organizēšana",
       description: "Sakārtošana garāžās, noliktavās, pieliekamos un mantas.",
-      details: ["plauktu plānošana", "sistēmu izveide kārtībai"],
+      details: ["Plauktu plānošana", "Sistēmu izveide kārtībai"],
       ideal: "Pirms pārvākšanās vai sezonas tīrīšanas.",
       pricing: { basic: "30 € / h" },
     },
@@ -158,7 +160,7 @@ export const content = {
       categoryId: "culture",
       title: "🎭 Pasākumu pavadīšana",
       description: "Kopīga došanās uz kino, teātri, koncertiem vai izstādēm.",
-      details: ["plānošana, pārvadāšana, kompānija pasākumos"],
+      details: ["Plānošana, Pārvadāšana, Kompānija pasākumos"],
       ideal: "Vēlies drošu un patīkamu sabiedrību pasākumos.",
       pricing: { basic: "30 € / 2h" },
     },
