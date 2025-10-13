@@ -1,6 +1,30 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { content } from "@/config/content";
+import annaLapinaImg from "@/assets/helpers/anna-lapina.jpg";
+import marijaKarklinaImg from "@/assets/helpers/marija-karklina.jpg";
+import daceSilmaleImg from "@/assets/helpers/dace-silmale.jpg";
+import zaneBalodeImg from "@/assets/helpers/zane-balode.jpg";
+import martinsFixImg from "@/assets/helpers/martins-fix.jpg";
+import ievaOzolaImg from "@/assets/helpers/ieva-ozola.jpg";
+import janisBerzinsImg from "@/assets/helpers/janis-berzins.jpg";
+import ligaKalnaImg from "@/assets/helpers/liga-kalna.jpg";
+import rihardsLiepinsImg from "@/assets/helpers/rihards-liepins.jpg";
+import kristineEgliteImg from "@/assets/helpers/kristine-eglite.jpg";
+
+// Map helper slugs to avatar images
+const helperAvatars: Record<string, string> = {
+  "anna-lapina": annaLapinaImg,
+  "marija-karklina": marijaKarklinaImg,
+  "dace-silmale": daceSilmaleImg,
+  "zane-balode": zaneBalodeImg,
+  "martins-fix": martinsFixImg,
+  "ieva-ozola": ievaOzolaImg,
+  "janis-berzins": janisBerzinsImg,
+  "liga-kalna": ligaKalnaImg,
+  "rihards-liepins": rihardsLiepinsImg,
+  "kristine-eglite": kristineEgliteImg,
+};
 
 const HelperProfile = () => {
   const { helperId } = useParams();
@@ -21,6 +45,8 @@ const HelperProfile = () => {
     helper.specializations.includes(s.slug)
   );
 
+  const avatarImage = helperAvatars[helper.slug];
+
   return (
     <div className="min-h-screen bg-background p-6">
       <div className="max-w-4xl mx-auto space-y-8">
@@ -32,7 +58,15 @@ const HelperProfile = () => {
         {/* Header */}
         <div className="bg-card border border-border rounded-2xl p-8 space-y-4">
           <div className="flex items-center gap-6">
-            <div className="text-7xl">👤</div>
+            {avatarImage ? (
+              <img 
+                src={avatarImage} 
+                alt={helper.name}
+                className="w-24 h-24 rounded-full object-cover ring-4 ring-primary/20"
+              />
+            ) : (
+              <div className="text-7xl">👤</div>
+            )}
             <div>
               <h1 className="text-3xl font-bold">{helper.name}</h1>
               <p className="text-muted-foreground">
