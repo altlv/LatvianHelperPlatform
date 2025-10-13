@@ -94,7 +94,7 @@ const Landing = () => {
           <div>
             <h2 className="text-3xl font-bold text-[#D4AF37] mb-4">🎓 Attīstība un izglītība</h2>
             <p className="text-foreground/80 leading-relaxed">
-              Katrs Palīgs var piedalīties <strong>Žaņa akadēmijas apmācībās</strong> — komunikācija,
+              Katrs Palīgs var piedalīties <strong>Žaņu akadēmijas apmācībās</strong> — komunikācija,
               sociālais darbs, improvizācija, pašaizsardzība un praktiskās iemaņas. <br />
               🎓 Palīdzība kļūst par profesiju. Pieredze kļūst par izaugsmi.
             </p>
