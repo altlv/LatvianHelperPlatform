@@ -175,7 +175,27 @@ const HelperProfile = () => {
         {/* Reviews */}
         <section className="bg-card border border-border rounded-2xl p-6 space-y-3">
           <h2 className="text-xl font-semibold">💬 Atsauksmes</h2>
-          <p className="text-foreground/70">Pagaidām nav atsauksmju</p>
+          {helper.reviews && helper.reviews.length > 0 ? (
+            <div className="space-y-4">
+              {helper.reviews.map((review, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 rounded-lg border border-border bg-accent/20"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-semibold">{review.author}</span>
+                    <div className="flex items-center gap-1">
+                      <span className="text-yellow-500">{"⭐".repeat(review.rating)}</span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">{review.date}</p>
+                  <p className="text-foreground/80">{review.text}</p>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-foreground/70">Pagaidām nav atsauksmju</p>
+          )}
         </section>
 
         {/* Action Buttons */}

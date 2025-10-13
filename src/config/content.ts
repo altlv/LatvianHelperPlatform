@@ -186,6 +186,26 @@ export const content = {
         "2025-10-20": ["10:00", "14:00", "18:00"],
         "2025-10-21": ["09:00", "13:00"],
       },
+      reviews: [
+        {
+          author: "Ilze R.",
+          rating: 5,
+          date: "2025-10-10",
+          text: "Anna ir fantastiski rūpīga! Māja spīd kā jauna. Izmanto tikai ekoloģiskos līdzekļus, kas ir svarīgi manai ģimenei.",
+        },
+        {
+          author: "Pēteris M.",
+          rating: 5,
+          date: "2025-10-05",
+          text: "Ļoti profesionāla pieeja. Skapji tagad ir perfekti sakārtoti un viss ir viegli atrodams. Ieteicu!",
+        },
+        {
+          author: "Sandra B.",
+          rating: 5,
+          date: "2025-09-28",
+          text: "Labākā mājas palīdze, ar kuru esmu strādājusi. Uzticama, laipna un ļoti detalizēta savā darbā.",
+        },
+      ],
     },
     {
       slug: "marija-karklina",
@@ -202,6 +222,20 @@ export const content = {
         "2025-10-20": ["12:00", "16:00"],
         "2025-10-22": ["10:00", "15:00"],
       },
+      reviews: [
+        {
+          author: "Anita V.",
+          rating: 5,
+          date: "2025-10-08",
+          text: "Marija ir tik silta un empātiska persona. Viņa ne tikai palīdz mājās, bet arī uzklausīt, kad tas vajadzīgs.",
+        },
+        {
+          author: "Jānis K.",
+          rating: 4,
+          date: "2025-09-30",
+          text: "Ļoti labs serviss un patīkama komunikācija. Māja vienmēr ir sakārtota pēc viņas apmeklējuma.",
+        },
+      ],
     },
     {
       slug: "dace-silmale",
@@ -218,6 +252,26 @@ export const content = {
         "2025-10-21": ["11:00", "17:00"],
         "2025-10-23": ["10:00", "14:00"],
       },
+      reviews: [
+        {
+          author: "Elīna T.",
+          rating: 5,
+          date: "2025-10-12",
+          text: "Dace palīdzēja man cauri grūtam periodam. Viņas meditācijas sesijas bija tieši tas, kas vajadzīgs.",
+        },
+        {
+          author: "Roberts L.",
+          rating: 5,
+          date: "2025-10-03",
+          text: "Izcila klausītāja un atbalsta persona. Paldies par pacietību un empātiju!",
+        },
+        {
+          author: "Laima D.",
+          rating: 5,
+          date: "2025-09-25",
+          text: "Lieliski! Jūtos daudz mierīgāka un līdzsvarotāka pēc tikšanās ar Daci.",
+        },
+      ],
     },
     {
       slug: "zane-balode",
@@ -234,6 +288,20 @@ export const content = {
         "2025-10-20": ["14:00", "18:00"],
         "2025-10-22": ["16:00", "19:00"],
       },
+      reviews: [
+        {
+          author: "Gunta S.",
+          rating: 5,
+          date: "2025-10-11",
+          text: "Zane ir brīnišķīga kompānija kultūras pasākumos. Viņas zināšanas par mākslu ir iespaidīgas!",
+        },
+        {
+          author: "Mārtiņš P.",
+          rating: 4,
+          date: "2025-10-01",
+          text: "Kopā apmeklējām galeriju un teātra izrādi. Ļoti interesantas sarunas un jauna perspektīva.",
+        },
+      ],
     },
     {
       slug: "martins-fix",
@@ -250,6 +318,20 @@ export const content = {
         "2025-10-20": ["08:00", "13:00"],
         "2025-10-24": ["10:00", "14:00"],
       },
+      reviews: [
+        {
+          author: "Kaspars Z.",
+          rating: 5,
+          date: "2025-10-09",
+          text: "Salika mēbeles ātri un precīzi. Garāža tagad ir perfekti organizēta. Iesaku!",
+        },
+        {
+          author: "Inese J.",
+          rating: 4,
+          date: "2025-09-27",
+          text: "Labs meistars, strādā ātri un kvalitāti. Noteikti izsaukšu vēlreiz.",
+        },
+      ],
     },
     {
       slug: "ieva-ozola",
@@ -266,6 +348,26 @@ export const content = {
         "2025-10-21": ["10:00", "14:00", "16:00"],
         "2025-10-23": ["09:00", "15:00"],
       },
+      reviews: [
+        {
+          author: "Līga R.",
+          rating: 5,
+          date: "2025-10-13",
+          text: "Ieva ir kārtības brīnumdare! Mans skapja izskats pēc viņas darba ir neticami. KonMari metode strādā!",
+        },
+        {
+          author: "Andris V.",
+          rating: 5,
+          date: "2025-10-06",
+          text: "Palīdzēja sakārtot visu noliktavu. Tagad viss ir marķēts un viegli atrodams. Paldies!",
+        },
+        {
+          author: "Daina K.",
+          rating: 5,
+          date: "2025-09-29",
+          text: "Profesionāla un sistemātiska pieeja. Māja tagad ir daudz funkcionālāka.",
+        },
+      ],
     },
     {
       slug: "janis-berzins",
@@ -282,6 +384,26 @@ export const content = {
         "2025-10-20": ["07:00", "12:00", "17:00"],
         "2025-10-22": ["08:00", "18:00"],
       },
+      reviews: [
+        {
+          author: "Māris B.",
+          rating: 5,
+          date: "2025-10-10",
+          text: "Jānis ir lielisks motivators! Pateicoties viņam, esmu daudz aktīvāks un veselīgāks.",
+        },
+        {
+          author: "Kristīne S.",
+          rating: 5,
+          date: "2025-10-02",
+          text: "Treniņi ar Jāni ir efektīvi un patīkami. Viņš pielāgo programmu manām vajadzībām.",
+        },
+        {
+          author: "Edgars M.",
+          rating: 4,
+          date: "2025-09-24",
+          text: "Labs treneris, zina savu darbu. Joga sesijas ir relaksējošas un noderīgas.",
+        },
+      ],
     },
     {
       slug: "liga-kalna",
@@ -298,6 +420,26 @@ export const content = {
         "2025-10-21": ["11:00", "15:00", "19:00"],
         "2025-10-24": ["10:00", "14:00"],
       },
+      reviews: [
+        {
+          author: "Iveta P.",
+          rating: 5,
+          date: "2025-10-14",
+          text: "Līga ir brīnišķīga! Viņa ir tik empātiska un sapratoša. Pēc mūsu sarunām jūtos daudz labāk.",
+        },
+        {
+          author: "Raimonds H.",
+          rating: 5,
+          date: "2025-10-07",
+          text: "Kopā apmeklējām koncertu un mākslas izstādi. Līgas kompānija padara katru pasākumu īpašu.",
+        },
+        {
+          author: "Zinta L.",
+          rating: 5,
+          date: "2025-09-30",
+          text: "Lieliski! Radošās nodarbības ar Līgu ir terapeitiskas un iedvesmojošas.",
+        },
+      ],
     },
     {
       slug: "rihards-liepins",
@@ -314,6 +456,20 @@ export const content = {
         "2025-10-20": ["14:00", "18:00"],
         "2025-10-23": ["16:00", "20:00"],
       },
+      reviews: [
+        {
+          author: "Artūrs G.",
+          rating: 5,
+          date: "2025-10-04",
+          text: "Rihards ātri novērsa elektrisku problēmu un uzstādīja jaunu lampu. Profesionāli un droši!",
+        },
+        {
+          author: "Vija N.",
+          rating: 4,
+          date: "2025-09-26",
+          text: "Labs speciālists, zina gan IT, gan praktisko darbu pamatus.",
+        },
+      ],
     },
     {
       slug: "kristine-eglite",
@@ -330,6 +486,26 @@ export const content = {
         "2025-10-22": ["09:00", "13:00", "17:00"],
         "2025-10-24": ["10:00", "15:00"],
       },
+      reviews: [
+        {
+          author: "Agnese M.",
+          rating: 5,
+          date: "2025-10-15",
+          text: "Kristīne ir fantastiska wellness coach! Viņas holistiskā pieeja man palīdzēja uzlabot gan veselību, gan pašsajūtu.",
+        },
+        {
+          author: "Valdis K.",
+          rating: 5,
+          date: "2025-10-08",
+          text: "Meditācijas sesijas ar Kristīni ir tieši tas, kas vajadzīgs pēc stresainām darba dienām. Ieteicu!",
+        },
+        {
+          author: "Baiba T.",
+          rating: 5,
+          date: "2025-09-28",
+          text: "Lieliski padomi par uzturu un dzīvesveidu. Jūtos daudz enerģiskāka!",
+        },
+      ],
     },
   ],
 
