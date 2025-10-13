@@ -11,9 +11,9 @@ const Landing = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center space-y-8">
-          <div className="flex justify-center mb-8">
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto text-center space-y-6">
+          <div className="flex justify-center mb-4">
             <img
               src={logo}
               alt="Žanis | Žanna Logo"
@@ -32,7 +32,7 @@ const Landing = () => {
           </p>
 
           {/* Registration & Demo Section */}
-          <div className="space-y-6 mt-8">
+          <div className="space-y-4 mt-6">
             {/* Registration Buttons */}
             <div className="flex flex-wrap gap-4 justify-center">
               <Button
@@ -77,7 +77,7 @@ const Landing = () => {
           </div>
 
           {/* Disclaimer */}
-          <p className="text-sm text-foreground/70 max-w-2xl mx-auto mt-8">
+          <p className="text-sm text-foreground/70 max-w-2xl mx-auto mt-6">
             Atbalsta un tālākizglītības platforma sirsnīgiem cilvēkiem, kuri vēlas būt
             noderīgi un kļūt par palīgu vai arī meklē sev palīdzību dažādās ikdienas
             situācijās.
@@ -86,8 +86,8 @@ const Landing = () => {
       </section>  {/* ← CLOSE the hero section before starting the next one */}
 
       {/* Info Sections */}
-      <section className="bg-background py-20 px-6 text-center border-t border-foreground/10">
-        <div className="max-w-4xl mx-auto space-y-12">
+      <section className="bg-background py-12 px-6 text-center border-t border-foreground/10">
+        <div className="max-w-4xl mx-auto space-y-10">
           {/* Kāpēc mēs pastāvam */}
           <div>
             <h2 className="text-3xl font-bold text-[#D4AF37] mb-4">🤝 Kāpēc mēs pastāvam</h2>
@@ -173,7 +173,7 @@ const Landing = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-10 border-t border-foreground/10 mt-16">
+      <footer className="py-8 border-t border-foreground/10">
         <div className="flex flex-wrap justify-center gap-6 text-sm text-foreground/70">
           <Link to="/ethics">Ētikas kodekss</Link>
           <Link to="/privacy">Privātuma politika</Link>
