@@ -1,7 +1,6 @@
 # Welcome to our project - helper platform (demo) for our courses.
 
-Paistakingly built with genAI support:
-Lovable/chatGPT/Copilot
+Painstakingly built with genAI support: Lovable/chatGPT/Copilot
 
 ## Project info
 
