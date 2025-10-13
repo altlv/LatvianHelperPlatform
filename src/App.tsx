@@ -21,7 +21,9 @@ import HelperStep4 from "./pages/register/HelperStep4";
 import HelperTraining from "./pages/register/HelperTraining";
 import HelperWelcome from "./pages/register/HelperWelcome";
 
-import Profile from "./pages/Profile";  // If this is your “generic profile / fallback” page
+import Profile from "./pages/Profile";
+import ProfileEdit from "./pages/ProfileEdit";
+import Training from "./pages/Training";
 import HelpCategories from "./pages/HelpCategories";
 import CategoryDetail from "./pages/CategoryDetail";
 import ServiceDetail from "./pages/ServiceDetail";
@@ -57,8 +59,10 @@ const App = () => (
           <Route path="/register/helper/training" element={<HelperTraining />} />
           <Route path="/register/helper/welcome" element={<HelperWelcome />} />
 
-          {/* Maybe your generic “Profile” page (if used) */}
+          {/* Profile pages */}
           <Route path="/profile" element={<Profile />} />
+          <Route path="/profile/edit" element={<ProfileEdit />} />
+          <Route path="/training" element={<Training />} />
 
           {/* Category / Service flow */}
           <Route path="/search" element={<Search />} />

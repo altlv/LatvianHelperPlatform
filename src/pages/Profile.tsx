@@ -118,11 +118,11 @@ const Profile = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Button size="lg" className="rounded-full">
-            Rediģēt profilu
+          <Button size="lg" className="rounded-full" asChild>
+            <Link to="/profile/edit">Rediģēt profilu</Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="rounded-full">
-            <Link to="/register/helper/training">Apmācības</Link>
+            <Link to="/training">Apmācības</Link>
           </Button>
         </div>
       </div>
