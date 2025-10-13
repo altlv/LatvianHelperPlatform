@@ -21,10 +21,10 @@ const HelpCategories = () => {
         <div className="flex items-center gap-4">
           <Button
             variant="ghost"
-            onClick={() => navigate(-1)}
+            onClick={() => navigate("/")}
             className="rounded-full"
           >
-            ← {content.helpCategories?.backButton ?? "Atpakaļ"}
+            ← Sākums
           </Button>
         </div>
 
