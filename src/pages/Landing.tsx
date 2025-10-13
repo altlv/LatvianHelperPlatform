@@ -52,26 +52,27 @@ const Landing = () => {
             </div>
 
             {/* Demo Buttons */}
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-col items-center gap-4">
               <Button
-                variant="outline"
-                className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-semibold rounded-xl px-6 py-3 transition"
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-xl px-10 py-4 text-lg shadow-lg hover:shadow-xl transition-all"
                 onClick={() => {
                   localStorage.setItem("demoRole", "client");
                   navigate("/profile/client");
                 }}
               >
-                Pieslēgties kā klients (demo)
+                🔍 Apskatīt kā klients (demo)
               </Button>
               <Button
                 variant="outline"
-                className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-semibold rounded-xl px-6 py-3 transition"
+                size="sm"
+                className="border-muted-foreground/30 text-muted-foreground hover:bg-accent hover:text-accent-foreground rounded-xl px-6 py-2 transition"
                 onClick={() => {
                   localStorage.setItem("demoRole", "helper");
                   navigate("/profile");
                 }}
               >
-                Pieslēgties kā palīgs (demo)
+                Apskatīt kā palīgs (demo)
               </Button>
             </div>
           </div>
