@@ -602,7 +602,7 @@ export const content = {
     welcome: {
       title: "Laipni lūgti!",
       subtitle: "Reģistrācija pabeigta",
-      message: "Tagad tu vari sākt meklēt palīgu.",
+      message: "Tagad tu vari sākt meklēt sev savu palīgu.",
       button: "Sākt meklēt",
       findHelperButton: "Meklēt palīgu",
       profileButton: "Uz profilu"
