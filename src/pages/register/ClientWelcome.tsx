@@ -2,11 +2,17 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { content } from "@/config/content";
 import heartwarmingImage from "@/assets/client-welcome-heartwarming.jpg";
+import logoImage from "@/assets/logo-new.png";
 
 const ClientWelcome = () => {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="max-w-md w-full text-center space-y-6">
+        <img 
+          src={logoImage} 
+          alt="Žanis Žanna logo" 
+          className="w-48 md:w-64 mx-auto mb-6"
+        />
         <img 
           src={heartwarmingImage} 
           alt="Welcome to our community" 
