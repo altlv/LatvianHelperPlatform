@@ -22,6 +22,7 @@ import HelperTraining from "./pages/register/HelperTraining";
 import HelperWelcome from "./pages/register/HelperWelcome";
 
 import ClientProfile from "./pages/ClientProfile";
+import ClientMailbox from "./pages/ClientMailbox";
 import Profile from "./pages/Profile";
 import ProfileEdit from "./pages/ProfileEdit";
 import Training from "./pages/Training";
@@ -63,6 +64,7 @@ const App = () => (
           {/* Profile pages */}
           <Route path="/profile" element={<Profile />} />
           <Route path="/profile/client" element={<ClientProfile />} />
+          <Route path="/mailbox" element={<ClientMailbox />} />
           <Route path="/profile/edit" element={<ProfileEdit />} />
           <Route path="/training" element={<Training />} />
 

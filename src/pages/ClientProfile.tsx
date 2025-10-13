@@ -51,8 +51,8 @@ const ClientProfile = () => {
                 ? "Nav jaunu ziņu" 
                 : `Tev ir ${clientData.unreadMessages} jauni ziņojumi`}
             </p>
-            <Button variant="outline" className="mt-3">
-              Atvērt pastkasti
+            <Button variant="outline" className="mt-3" asChild>
+              <Link to="/mailbox">Atvērt pastkasti</Link>
             </Button>
             <p className="text-sm text-muted-foreground mt-2">
               Šeit saņemsi atbildes no palīgiem un administrācijas ziņojumus
