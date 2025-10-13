@@ -11,12 +11,9 @@ import { content } from "@/config/content";
 
 const CategoryDetail = () => {
   const navigate = useNavigate();
-  const { categorySlug } = useParams(); // URL: /search/:categorySlug
+  const { categorySlug } = useParams();
 
-  // Find the category by its id (slug in URL == category.id in content)
   const category = content.categories.find((cat) => cat.id === categorySlug);
-
-  // All services (help cards) for this category
   const services = content.helpCards.filter(
     (h) => h.categoryId === categorySlug
   );
@@ -27,7 +24,7 @@ const CategoryDetail = () => {
         <div className="max-w-xl text-center space-y-4">
           <h1 className="text-2xl font-bold">Kategorija nav atrasta</h1>
           <p className="text-muted-foreground">
-            Lūdzu, atgriezies iepriekšējā solī un mēģini vēlreiz.
+            Lūdzu, atgriezies un mēģini vēlreiz.
           </p>
           <div className="flex gap-3 justify-center">
             <Button variant="outline" onClick={() => navigate(-1)}>
@@ -64,13 +61,14 @@ const CategoryDetail = () => {
           </p>
         </div>
 
-        {/* Service cards for this category */}
         <div className="grid md:grid-cols-2 gap-4">
           {services.map((svc) => (
             <Card
               key={svc.slug}
               className="cursor-pointer hover:bg-accent/50 transition-colors"
-              onClick={() => navigate(`/search/${category.id}/${svc.slug}`)}
+              onClick={() =>
+                navigate(`/search/${category.id}/${svc.slug}`)
+              }
             >
               <CardHeader>
                 <CardTitle className="text-xl">{svc.title}</CardTitle>
