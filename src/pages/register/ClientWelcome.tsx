@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { content } from "@/config/content";
+import heartwarmingImage from "@/assets/client-welcome-heartwarming.jpg";
 
 const ClientWelcome = () => {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="max-w-md w-full text-center space-y-6">
+        <img 
+          src={heartwarmingImage} 
+          alt="Welcome to our community" 
+          className="w-full h-48 object-cover rounded-lg mb-4"
+        />
+        
         <h1 className="text-4xl font-bold text-foreground">
           🎊 {content.clientRegistration.welcome.title}
         </h1>
