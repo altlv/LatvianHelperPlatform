@@ -30,8 +30,18 @@ const HelperProfile = () => {
   const { helperId } = useParams();
   const navigate = useNavigate();
 
-  const helpers = content.helpers || [];  // may be undefined if not added
+  const helpers = content.helpers || [];
   const helper = helpers.find((h) => h.slug === helperId);
+
+  const handleBack = () => {
+    // Check if there's history to go back to
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      // If no history, go to search page
+      navigate("/search");
+    }
+  };
 
   if (!helper) {
     return (
@@ -51,7 +61,7 @@ const HelperProfile = () => {
     <div className="min-h-screen bg-background p-6">
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Back Button */}
-        <Button variant="ghost" onClick={() => navigate(-1)}>
+        <Button variant="ghost" onClick={handleBack}>
           ← Atgriezties
         </Button>
 
@@ -206,7 +216,7 @@ const HelperProfile = () => {
           <Button variant="outline" size="lg" className="rounded-full">
             Uzdot jautājumu
           </Button>
-          <Button variant="ghost" onClick={() => navigate(-1)}>
+          <Button variant="ghost" onClick={handleBack}>
             ← Atgriezties
           </Button>
         </div>
