@@ -13,11 +13,6 @@ const ClientWelcome = () => {
           <ArrowLeft className="w-4 h-4" />
           <span>Atpakaļ uz sākumlapu</span>
         </Link>
-        <img
-          src={logoImage} 
-          alt="Žanis Žanna logo" 
-          className="w-48 md:w-64 mx-auto mb-6"
-        />
         <img 
           src={heartwarmingImage} 
           alt="Welcome to our community" 
