@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 // If "@/config/content" does not exist, you can delete this import;
 // the UI will still show the fallback title/subtitle below.
 // import { content } from "@/config/content";
-import logo from "@/assets/logo-clean.png";
+import logo from "@/assets/logo-transparent.png";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ const Landing = () => {
             <img
               src={logo}
               alt="Žanis | Žanna Logo"
-              className="h-32 w-auto drop-shadow-md bg-white/90 rounded-2xl p-4"
+              className="h-48 w-auto"
             />
           </div>
 
