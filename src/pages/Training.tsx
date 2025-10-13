@@ -271,7 +271,7 @@ const Training = () => {
         {/* CTA */}
         <div className="flex gap-4 justify-center pt-6">
           <Button size="lg" className="rounded-full" asChild>
-            <Link to="/register/helper/training">Sākt apmācības</Link>
+            <Link to="/register/helper/training">Sākt kursu</Link>
           </Button>
           <Button variant="outline" size="lg" className="rounded-full" asChild>
             <Link to="/profile">Atpakaļ uz profilu</Link>
