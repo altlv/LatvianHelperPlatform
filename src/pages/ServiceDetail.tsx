@@ -8,41 +8,36 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { content } from "@/config/content";
-import homeHelpImg from "@/assets/services/home-help.jpg";
-import physicalActivityImg from "@/assets/services/physical-activity.jpg";
-import emotionalSupportImg from "@/assets/services/emotional-support.jpg";
-import ecoCleaningImg from "@/assets/services/eco-cleaning.jpg";
-import tutoringImg from "@/assets/services/tutoring.jpg";
-import techHelpImg from "@/assets/services/tech-help.jpg";
+import homeHelperImg from "@/assets/services/home-helper.jpg";
+import closetOrganizationImg from "@/assets/services/closet-organization.jpg";
+import ecoCleaningImg from "@/assets/services/eco-cleaning-new.jpg";
+import fitnessFriendImg from "@/assets/services/fitness-friend.jpg";
+import wellnessSupportImg from "@/assets/services/wellness-support.jpg";
+import emotionalFriendImg from "@/assets/services/emotional-friend.jpg";
+import creativePartnerImg from "@/assets/services/creative-partner.jpg";
 import furnitureAssemblyImg from "@/assets/services/furniture-assembly.jpg";
+import spaceOrganizationImg from "@/assets/services/space-organization.jpg";
+import eventCompanionImg from "@/assets/services/event-companion.jpg";
+import cultureConversationImg from "@/assets/services/culture-conversation.jpg";
 
 // Map service slugs to images
 const serviceImages: Record<string, string> = {
-  // Home category
-  "majas-paligs": homeHelpImg,
-  "virtuves-asakists": homeHelpImg,
+  // Household category
+  "majas-paligs": homeHelperImg,
+  "skapju-kartosana": closetOrganizationImg,
   "eko-tirisana": ecoCleaningImg,
-  "skapju-kartosana": homeHelpImg,
-  "partikas-pirksana": homeHelpImg,
-  // Health category  
-  "fiziskas-aktivitates": physicalActivityImg,
-  "vingrosas-pilatniks": physicalActivityImg,
-  "staigasanas-paligs": physicalActivityImg,
-  "izskats-stils": emotionalSupportImg,
+  // Health category
+  "fitnesa-draugs": fitnessFriendImg,
+  "labsajutas-atbalsts": wellnessSupportImg,
   // Social category
-  "emocionalais-draugs": emotionalSupportImg,
-  "sarunbiedrs": emotionalSupportImg,
-  "kulturals-pavadonis": emotionalSupportImg,
-  // Learning category
-  "it-macibas": techHelpImg,
-  "valodu-macibas": tutoringImg,
-  "radosas-nodarbibas": tutoringImg,
-  // Tech category
-  "it-atbalsts": techHelpImg,
-  "viedo-majas-konsultants": techHelpImg,
-  "socialas-platformas": techHelpImg,
+  "emocionalais-draugs": emotionalFriendImg,
+  "radosais-partneris": creativePartnerImg,
   // Practical category
   "nelieli-remontdarbi": furnitureAssemblyImg,
+  "telpu-organizesana": spaceOrganizationImg,
+  // Culture category
+  "pasakumu-pavadisana": eventCompanionImg,
+  "kulturas-sarunu-biedrs": cultureConversationImg,
 };
 
 const ServiceDetail = () => {
@@ -87,7 +82,7 @@ const ServiceDetail = () => {
     return { ...h, finalPrice: final.toFixed(2) };
   });
 
-  const serviceImage = serviceImages[serviceSlug!] || homeHelpImg;
+  const serviceImage = serviceImages[serviceSlug!] || homeHelperImg;
 
   return (
     <div className="min-h-screen bg-background p-6">
