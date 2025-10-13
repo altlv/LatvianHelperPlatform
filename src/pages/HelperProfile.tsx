@@ -1,4 +1,5 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { content } from "@/config/content";
 import annaLapinaImg from "@/assets/helpers/anna-lapina.jpg";
@@ -29,6 +30,10 @@ const helperAvatars: Record<string, string> = {
 const HelperProfile = () => {
   const { helperId } = useParams();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [helperId]);
 
   const helpers = content.helpers || [];
   const helper = helpers.find((h) => h.slug === helperId);
