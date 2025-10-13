@@ -118,7 +118,10 @@ const Profile = () => {
           </div>
           <div className="bg-card border border-border rounded-2xl p-6">
             <h2 className="text-xl font-semibold mb-4">📬 Pastkastīte</h2>
-            <p className="text-foreground/70">Nav jaunu ziņu</p>
+            <p className="text-foreground/70 mb-3">Nav jaunu ziņu</p>
+            <Button variant="outline" asChild>
+              <Link to="/helper/mailbox">Atvērt pastkasti</Link>
+            </Button>
           </div>
         </div>
 
