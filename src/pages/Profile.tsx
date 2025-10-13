@@ -18,6 +18,12 @@ const Profile = () => {
   return (
     <div className="min-h-screen bg-background p-4">
       <div className="max-w-4xl mx-auto space-y-6 py-8">
+        <div className="flex items-center justify-between">
+          <Button variant="ghost" asChild>
+            <Link to="/">← Sākums</Link>
+          </Button>
+        </div>
+        
         <h1 className="text-3xl font-bold text-center text-foreground">
           Mans profils
         </h1>
