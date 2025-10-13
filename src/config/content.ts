@@ -225,9 +225,9 @@ export const content = {
       rating: 4.7,
       city: "Liepāja",
       online: true,
-      specializations: ["radosais-partneris", "kulturas-sarunu-biedrs"],
+      specializations: ["radosais-partneris", "kulturas-sarunu-biedrs", "pasakumu-pavadisana"],
       defaultPrice: 30,
-      discounts: { "radosais-partneris": 0.05 },
+      discounts: { "radosais-partneris": 0.05, "pasakumu-pavadisana": 0.08 },
       bio: "Radoša dvēsele — kopā radīsim un runāsim par mākslu un dzīvi.",
       certifications: [],
       availability: {
@@ -289,9 +289,9 @@ export const content = {
       rating: 5.0,
       city: "Rīga",
       online: true,
-      specializations: ["emocionalais-draugs", "radosais-partneris", "kulturas-sarunu-biedrs"],
+      specializations: ["emocionalais-draugs", "radosais-partneris", "kulturas-sarunu-biedrs", "pasakumu-pavadisana"],
       defaultPrice: 27,
-      discounts: { "emocionalais-draugs": 0.08 },
+      discounts: { "emocionalais-draugs": 0.08, "pasakumu-pavadisana": 0.10 },
       bio: "Empātiska klausītāja un radoša dvēsele — varu būt gan draugs grūtākos brīžos, gan iedvesmotājs jauniem piedzīvojumiem.",
       certifications: ["Aktīvās klausīšanās kurss", "Art therapy pamati"],
       availability: {
