@@ -13,7 +13,7 @@ const Landing = () => {
       {/* Hero Section */}
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto text-center space-y-6">
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-center mb-2">
             <img
               src={logo}
               alt="Žanis | Žanna Logo"
