@@ -21,13 +21,15 @@ import HelperStep4 from "./pages/register/HelperStep4";
 import HelperTraining from "./pages/register/HelperTraining";
 import HelperWelcome from "./pages/register/HelperWelcome";
 
-import Profile from "./pages/Profile";
+import Profile from "./pages/Profile";  // If this is your “generic profile / fallback” page
 import HelpCategories from "./pages/HelpCategories";
 import CategoryDetail from "./pages/CategoryDetail";
 import ServiceDetail from "./pages/ServiceDetail";
 import HelperProfile from "./pages/HelperProfile";
 import Search from "./pages/Search";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -55,20 +57,26 @@ const App = () => (
           <Route path="/register/helper/training" element={<HelperTraining />} />
           <Route path="/register/helper/welcome" element={<HelperWelcome />} />
 
+          {/* Maybe your generic “Profile” page (if used) */}
           <Route path="/profile" element={<Profile />} />
 
-          <Route path="/help-categories" element={<HelpCategories />} />
-          <Route path="/help-category/:categoryId" element={<CategoryDetail />} />
-
+          {/* Category / Service flow */}
           <Route path="/search" element={<Search />} />
           <Route path="/search/:categorySlug" element={<CategoryDetail />} />
           <Route path="/search/:categorySlug/:serviceSlug" element={<ServiceDetail />} />
 
+          {/* Legacy / redirect route */}
           <Route path="/meklet" element={<Navigate to="/search" replace />} />
 
+          {/* Helper / Paligs profile */}
           <Route path="/paligs/:helperId" element={<HelperProfile />} />
           <Route path="/helper/:helperId" element={<HelperProfile />} />
 
+          {/* About / Contact pages */}
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+
+          {/* Catch-all */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
