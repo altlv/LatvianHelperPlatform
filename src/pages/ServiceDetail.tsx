@@ -14,6 +14,7 @@ import emotionalSupportImg from "@/assets/services/emotional-support.jpg";
 import ecoCleaningImg from "@/assets/services/eco-cleaning.jpg";
 import tutoringImg from "@/assets/services/tutoring.jpg";
 import techHelpImg from "@/assets/services/tech-help.jpg";
+import furnitureAssemblyImg from "@/assets/services/furniture-assembly.jpg";
 
 // Map service slugs to images
 const serviceImages: Record<string, string> = {
@@ -40,6 +41,8 @@ const serviceImages: Record<string, string> = {
   "it-atbalsts": techHelpImg,
   "viedo-majas-konsultants": techHelpImg,
   "socialas-platformas": techHelpImg,
+  // Practical category
+  "nelieli-remontdarbi": furnitureAssemblyImg,
 };
 
 const ServiceDetail = () => {
