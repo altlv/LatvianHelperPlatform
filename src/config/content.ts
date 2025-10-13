@@ -600,7 +600,7 @@ export const content = {
       backButton: "Atpakaļ"
     },
     welcome: {
-      title: "Laipni lūgts!",
+      title: "Laipni lūgti!",
       subtitle: "Reģistrācija pabeigta",
       message: "Tagad tu vari sākt meklēt palīgu.",
       button: "Sākt meklēt",
