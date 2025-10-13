@@ -31,28 +31,49 @@ const Landing = () => {
             Tava drošā vieta, kur cilvēki palīdz viens otram – ar sirdi, prasmēm un cieņu.
           </p>
 
-          {/* Demo & CTA Section */}
-          <div className="flex flex-wrap gap-4 justify-center mt-8">
-            <Button
-              variant="outline"
-              className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-semibold rounded-xl px-6 py-3 transition"
-              onClick={() => {
-                localStorage.setItem("demoRole", "client");
-                navigate("/search");
-              }}
-            >
-              Pieslēgties kā klients (demo)
-            </Button>
-            <Button
-              variant="outline"
-              className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-semibold rounded-xl px-6 py-3 transition"
-              onClick={() => {
-                localStorage.setItem("demoRole", "helper");
-                navigate("/profile");
-              }}
-            >
-              Pieslēgties kā palīgs (demo)
-            </Button>
+          {/* Registration & Demo Section */}
+          <div className="space-y-6 mt-8">
+            {/* Registration Buttons */}
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-[#D4AF37] hover:bg-[#B8962F] text-black font-semibold rounded-xl px-8 py-3 transition"
+                asChild
+              >
+                <Link to="/register/client">Reģistrēties kā klients</Link>
+              </Button>
+              <Button
+                size="lg"
+                className="bg-[#D4AF37] hover:bg-[#B8962F] text-black font-semibold rounded-xl px-8 py-3 transition"
+                asChild
+              >
+                <Link to="/register/helper">Reģistrēties kā palīgs</Link>
+              </Button>
+            </div>
+
+            {/* Demo Buttons */}
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button
+                variant="outline"
+                className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-semibold rounded-xl px-6 py-3 transition"
+                onClick={() => {
+                  localStorage.setItem("demoRole", "client");
+                  navigate("/search");
+                }}
+              >
+                Pieslēgties kā klients (demo)
+              </Button>
+              <Button
+                variant="outline"
+                className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-semibold rounded-xl px-6 py-3 transition"
+                onClick={() => {
+                  localStorage.setItem("demoRole", "helper");
+                  navigate("/profile");
+                }}
+              >
+                Pieslēgties kā palīgs (demo)
+              </Button>
+            </div>
           </div>
 
           {/* Disclaimer */}
