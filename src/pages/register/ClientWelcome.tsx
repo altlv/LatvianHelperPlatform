@@ -3,12 +3,17 @@ import { Button } from "@/components/ui/button";
 import { content } from "@/config/content";
 import heartwarmingImage from "@/assets/client-welcome-heartwarming.jpg";
 import logoImage from "@/assets/logo-new.png";
+import { ArrowLeft } from "lucide-react";
 
 const ClientWelcome = () => {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="max-w-md w-full text-center space-y-6">
-        <img 
+        <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-4">
+          <ArrowLeft className="w-4 h-4" />
+          <span>Atpakaļ uz sākumlapu</span>
+        </Link>
+        <img
           src={logoImage} 
           alt="Žanis Žanna logo" 
           className="w-48 md:w-64 mx-auto mb-6"
