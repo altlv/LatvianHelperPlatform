@@ -21,7 +21,7 @@ const Landing = () => {
             />
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+          <h1 className="text-2xl md:text-3xl font-bold text-foreground">
             {/* {content?.landing?.title ?? "Atbalsts | Sirsnība"} */}
             Atbalsts | Sirsnība
           </h1>
