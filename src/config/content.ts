@@ -729,7 +729,7 @@ export const content = {
       title: "Apsveicam!",
       subtitle: "Tu esi kļuvis par palīgu",
       message: "Tagad tu vari sākt palīdzēt citiem.",
-      note: "Tagad tu vari izveidot savu profilu un sākt palīdzēt.",
+      note: "Paldies, ka esi ar mums!",
       button: "Uz profilu",
       specializationButton: "Izvēlēties specializāciju",
       profileButton: "Uz profilu"
