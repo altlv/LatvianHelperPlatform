@@ -58,7 +58,7 @@ const Landing = () => {
                 className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black font-semibold rounded-xl px-6 py-3 transition"
                 onClick={() => {
                   localStorage.setItem("demoRole", "client");
-                  navigate("/search");
+                  navigate("/profile/client");
                 }}
               >
                 Pieslēgties kā klients (demo)

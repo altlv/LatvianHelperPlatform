@@ -16,11 +16,11 @@ const ClientWelcome = () => {
 
         <div className="flex flex-col gap-4 pt-4">
           <Button asChild size="lg" className="rounded-full">
-            <Link to="/help-categories"> {content.clientRegistration.welcome.findHelperButton}</Link>
+            <Link to="/search">{content.clientRegistration.welcome.findHelperButton}</Link>
           </Button>
           
           <Button asChild variant="outline" size="lg" className="rounded-full">
-            <Link to="/profile"> {content.clientRegistration.welcome.profileButton}</Link>
+            <Link to="/profile/client">{content.clientRegistration.welcome.profileButton}</Link>
           </Button>
         </div>
       </div>
