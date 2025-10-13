@@ -39,6 +39,7 @@ const HelperProfile = () => {
   const helper = helpers.find((h) => h.slug === helperId);
 
   const handleBack = () => {
+    window.scrollTo(0, 0);
     // Check if there's history to go back to
     if (window.history.length > 1) {
       navigate(-1);

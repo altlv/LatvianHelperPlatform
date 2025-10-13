@@ -45,6 +45,7 @@ const ServiceDetail = () => {
   const navigate = useNavigate();
 
   const handleBack = () => {
+    window.scrollTo(0, 0);
     if (window.history.length > 1) {
       navigate(-1);
     } else {

@@ -14,6 +14,7 @@ const CategoryDetail = () => {
   const { categorySlug } = useParams();
 
   const handleBack = () => {
+    window.scrollTo(0, 0);
     if (window.history.length > 1) {
       navigate(-1);
     } else {
