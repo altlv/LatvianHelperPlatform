@@ -8,6 +8,39 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { content } from "@/config/content";
+import homeHelpImg from "@/assets/services/home-help.jpg";
+import physicalActivityImg from "@/assets/services/physical-activity.jpg";
+import emotionalSupportImg from "@/assets/services/emotional-support.jpg";
+import ecoCleaningImg from "@/assets/services/eco-cleaning.jpg";
+import tutoringImg from "@/assets/services/tutoring.jpg";
+import techHelpImg from "@/assets/services/tech-help.jpg";
+
+// Map service slugs to images
+const serviceImages: Record<string, string> = {
+  // Home category
+  "majas-paligs": homeHelpImg,
+  "virtuves-asakists": homeHelpImg,
+  "eko-tirisana": ecoCleaningImg,
+  "skapju-kartosana": homeHelpImg,
+  "partikas-pirksana": homeHelpImg,
+  // Health category  
+  "fiziskas-aktivitates": physicalActivityImg,
+  "vingrosas-pilatniks": physicalActivityImg,
+  "staigasanas-paligs": physicalActivityImg,
+  "izskats-stils": emotionalSupportImg,
+  // Social category
+  "emocionalais-draugs": emotionalSupportImg,
+  "sarunbiedrs": emotionalSupportImg,
+  "kulturals-pavadonis": emotionalSupportImg,
+  // Learning category
+  "it-macibas": techHelpImg,
+  "valodu-macibas": tutoringImg,
+  "radosas-nodarbibas": tutoringImg,
+  // Tech category
+  "it-atbalsts": techHelpImg,
+  "viedo-majas-konsultants": techHelpImg,
+  "socialas-platformas": techHelpImg,
+};
 
 const ServiceDetail = () => {
   const { categorySlug, serviceSlug } = useParams();
@@ -51,9 +84,11 @@ const ServiceDetail = () => {
     return { ...h, finalPrice: final.toFixed(2) };
   });
 
+  const serviceImage = serviceImages[serviceSlug!] || homeHelpImg;
+
   return (
     <div className="min-h-screen bg-background p-6">
-      <div className="max-w-5xl mx-auto space-y-10">
+      <div className="max-w-6xl mx-auto space-y-10">
         {/* Breadcrumb / back link */}
         <div className="flex items-center gap-3 text-sm">
           <Button
@@ -68,83 +103,144 @@ const ServiceDetail = () => {
           </Link>
         </div>
 
-        {/* Header */}
-        <header className="text-center space-y-3">
-          <h1 className="text-3xl font-bold">{service.title}</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            {service.description}
-          </p>
-        </header>
+        {/* Hero Section with Image */}
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/5 to-accent/10 p-8 md:p-12">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <h1 className="text-3xl md:text-4xl font-bold text-foreground uppercase tracking-wide">
+                  {service.title}
+                </h1>
+                <p className="text-lg md:text-xl italic text-foreground/80">
+                  {service.description}
+                </p>
+              </div>
+              
+              <div className="bg-primary/20 backdrop-blur-sm rounded-2xl p-6 space-y-4">
+                <p className="text-foreground/90 leading-relaxed">
+                  {service.ideal ? service.ideal : "Ideāli seniōriem cilvēkiem, kuri vēlas sakārtotu un mierīgu vidi."}
+                </p>
+                {service.details && service.details.length > 0 && (
+                  <ul className="space-y-2 text-sm text-foreground/80">
+                    {service.details.slice(0, 3).map((detail, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-primary mt-1">✓</span>
+                        <span>{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+            
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-72 h-72 md:w-80 md:h-80">
+                <div className="absolute inset-0 bg-primary/10 rounded-full blur-2xl"></div>
+                <img 
+                  src={serviceImage} 
+                  alt={service.title}
+                  className="relative w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/20"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         {/* Details & pricing */}
         <section className="grid md:grid-cols-2 gap-6">
-          <div className="rounded-2xl border p-6 space-y-4">
-            <h2 className="text-xl font-semibold">Kas iekļauts</h2>
-            <ul className="list-disc list-inside text-sm text-foreground/80 space-y-1">
-              {service.details?.map((d, i) => (
-                <li key={i}>{d}</li>
-              ))}
-            </ul>
-            {service.ideal && (
-              <p className="text-sm text-muted-foreground">
-                <span className="font-medium">Ideāli:</span> {service.ideal}
-              </p>
-            )}
-          </div>
-          <div className="rounded-2xl border p-6 space-y-4">
-            <h2 className="text-xl font-semibold">Cenas un atlaides</h2>
-            <ul className="text-sm text-foreground/80 space-y-1">
-              {service.pricing?.basic && <li>• {service.pricing.basic}</li>}
-              {service.pricing?.extended && <li>• {service.pricing.extended}</li>}
-            </ul>
-            {service.discounts && service.discounts.length > 0 && (
-              <>
-                <div className="h-px bg-border my-2" />
-                <h3 className="font-medium">Atlaides</h3>
-                <ul className="text-sm text-foreground/80 space-y-1">
-                  {service.discounts.map((d, i) => (
-                    <li key={i}>• {d}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-          </div>
+          <Card className="border-primary/20 shadow-sm">
+            <CardHeader>
+              <CardTitle className="text-xl">Kas iekļauts</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <ul className="space-y-2 text-foreground/80">
+                {service.details?.map((d, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-primary mt-0.5">✓</span>
+                    <span>{d}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-primary/20 shadow-sm">
+            <CardHeader>
+              <CardTitle className="text-xl">Cenas un atlaides</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-2 text-foreground/80">
+                {service.pricing?.basic && <p>• {service.pricing.basic}</p>}
+                {service.pricing?.extended && <p>• {service.pricing.extended}</p>}
+              </div>
+              {service.discounts && service.discounts.length > 0 && (
+                <>
+                  <div className="h-px bg-border my-3" />
+                  <div>
+                    <h3 className="font-semibold mb-2 text-primary">Atlaides</h3>
+                    <ul className="space-y-1 text-sm text-foreground/80">
+                      {service.discounts.map((d, i) => (
+                        <li key={i}>• {d}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </>
+              )}
+            </CardContent>
+          </Card>
         </section>
 
         {/* Helpers list */}
-        <section className="space-y-4">
-          <h2 className="text-xl font-semibold">Pieejamie palīgi</h2>
+        <section className="space-y-6">
+          <h2 className="text-2xl font-semibold text-center">Pieejamie palīgi</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {helpersWithPrice.length === 0 ? (
-              <p className="text-muted-foreground">Šobrīd nav palīgu šim pakalpojumam.</p>
+              <div className="col-span-2">
+                <Card className="p-8 text-center">
+                  <p className="text-muted-foreground mb-4">Šobrīd nav palīgu šim pakalpojumam.</p>
+                  <Button asChild>
+                    <Link to="/register/helper">Kļūt par palīgu</Link>
+                  </Button>
+                </Card>
+              </div>
             ) : (
               helpersWithPrice.map((h) => (
                 <Link
                   key={h.slug}
                   to={`/paligs/${h.slug}`}
-                  className="rounded-2xl border p-5 hover:shadow-sm transition text-left"
+                  className="group"
                 >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="font-semibold">{h.name}</div>
-                      <div className="text-sm text-muted-foreground">
-                        ⭐ {h.rating.toFixed(1)}
+                  <Card className="p-6 hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="space-y-1">
+                        <div className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                          {h.name}
+                        </div>
+                        <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                          <span className="text-yellow-500">⭐</span>
+                          <span>{h.rating.toFixed(1)}</span>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-sm text-muted-foreground">No</div>
+                        <div className="text-xl font-bold text-primary">{h.finalPrice} €</div>
                       </div>
                     </div>
-                    <div className="text-sm text-muted-foreground">
-                      Cena no {h.finalPrice} €
+                    <div className="flex flex-wrap gap-2">
+                      {h.specializations.slice(0, 3).map((s) => {
+                        const spec = content.helpCards.find(card => card.slug === s);
+                        return (
+                          <span
+                            key={s}
+                            className="text-xs bg-accent/50 border border-accent rounded-full px-3 py-1"
+                          >
+                            {spec?.title || s}
+                          </span>
+                        );
+                      })}
                     </div>
-                  </div>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {h.specializations.slice(0, 3).map((s) => (
-                      <span
-                        key={s}
-                        className="text-xs border rounded-full px-2 py-1"
-                      >
-                        {s}
-                      </span>
-                    ))}
-                  </div>
+                  </Card>
                 </Link>
               ))
             )}

@@ -54,22 +54,29 @@ const CategoryDetail = () => {
         </div>
 
         {/* Service cards */}
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-6">
           {services.map((svc) => (
             <Card
               key={svc.slug}
-              className="cursor-pointer hover:bg-accent/50 transition-colors"
+              className="group cursor-pointer hover:shadow-lg hover:border-primary/30 transition-all duration-300 overflow-hidden"
               onClick={() => navigate(`/search/${category.id}/${svc.slug}`)}
             >
-              <CardHeader>
-                <CardTitle className="text-xl">{svc.title}</CardTitle>
-                <CardDescription>{svc.description}</CardDescription>
+              <CardHeader className="bg-gradient-to-br from-primary/5 to-accent/10 pb-4">
+                <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                  {svc.title}
+                </CardTitle>
+                <CardDescription className="italic text-base">
+                  {svc.description}
+                </CardDescription>
               </CardHeader>
               {Array.isArray(svc.details) && svc.details.length > 0 && (
-                <CardContent>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
+                <CardContent className="pt-4">
+                  <ul className="space-y-2 text-sm text-foreground/80">
                     {svc.details.slice(0, 3).map((d, i) => (
-                      <li key={i}>{d}</li>
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-primary mt-0.5">✓</span>
+                        <span>{d}</span>
+                      </li>
                     ))}
                   </ul>
                 </CardContent>
