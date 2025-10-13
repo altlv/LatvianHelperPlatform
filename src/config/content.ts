@@ -1,3 +1,5 @@
+// src/config/content.ts
+
 export const content = {
   categories: [
     {
@@ -56,10 +58,7 @@ export const content = {
       ],
       ideal: "Ģimenes, aizņemti profesionāļi, seniori.",
       pricing: { basic: "2 h — 35 €", extended: "4 h — 60 €" },
-      discounts: [
-        "1× nedēļā abonements –10 %",
-        "Pirmais apmeklējums –15 %",
-      ],
+      discounts: ["1× nedēļā abonements –10 %", "Pirmais apmeklējums –15 %"],
     },
     {
       slug: "skapju-kartosana",
@@ -79,7 +78,7 @@ export const content = {
       slug: "eko-tirisana",
       categoryId: "household",
       title: "🧴 Eko tīrīšana",
-      description: "Videi draudzīga tīrīšana bez agresīvām ķīmiskām vielām.",
+      description: "Videi draudzīga tīrīšana bez agresīvām ķimikāliskām vielām.",
       details: [
         "Tīrīšana ar dabīgiem līdzekļiem",
         "Droši risinājumi bērniem un mājdzīvniekiem",
@@ -93,31 +92,26 @@ export const content = {
       categoryId: "health",
       title: "🏃‍♀️ Fitnesa draugs",
       description: "Motivē un pavada treniņos, iedvesmo kustībai.",
-      details: [
-        "Vieglie treniņi vai pastaigas",
-        "Kustību plāna sagatavošana",
-      ],
+      details: ["Vieglie treniņi vai pastaigas", "Kustību plāna sagatavošana"],
       ideal: "Vēlies kļūt aktīvāks vai noturēt formu.",
       pricing: { basic: "No 25 €/h" },
+      discounts: [],
     },
     {
       slug: "labsajutas-atbalsts",
       categoryId: "health",
       title: "🧘 Labsajūtas atbalsts",
       description: "Meditācija, elpošanas prakses un relaksācija.",
-      details: [
-        "Elpošanas vingrinājumi",
-        "Relaksācijas sesijas",
-      ],
+      details: ["Elpošanas vingrinājumi", "Relaksācijas sesijas"],
       ideal: "Stresa mazināšanai un garīgajam līdzsvaram.",
       pricing: { basic: "No 25 €/h" },
+      discounts: [],
     },
     {
       slug: "emocionalais-draugs",
       categoryId: "social",
       title: "🧠 Emocionālais draugs",
-      description:
-        "Empātiskas sarunas un klātbūtne — bez terapijas, ar sirdi.",
+      description: "Empātiskas sarunas un klātbūtne — bez terapijas, ar sirdi.",
       details: ["Klausīšanās, emociju izpaušana, sarunas"],
       ideal: "Vientulības mazināšanai un emocionālajai atslodzei.",
       pricing: { basic: "25 €/h", packages: ["4 sesijas — 85 €"] },
@@ -128,7 +122,7 @@ export const content = {
       categoryId: "social",
       title: "🎨 Radošais partneris",
       description: "Kopā darām kreatīvas lietas — lasām, mākslojam, radām.",
-      details: ["Radošas nodarbības", "kopīgas aktivitātes mājās vai dabā"],
+      details: ["Radošas nodarbības", "Kopīgas aktivitātes mājās vai dabā"],
       ideal: "Ideju meklētāji un domubiedri.",
       pricing: { basic: "No 20 €/h" },
       discounts: [],
@@ -138,10 +132,7 @@ export const content = {
       categoryId: "practical",
       title: "🛠️ Nelieli remontdarbi",
       description: "Sīkremonti, mēbeļu salikšana un instrumentu darbi.",
-      details: [
-        "Mēbeļu montāža",
-        "Plauktu nostiprināšana",
-      ],
+      details: ["Mēbeļu montāža", "Plauktu nostiprināšana"],
       ideal: "Tas, kam vajadzīga neliela tehniska palīdzība.",
       pricing: { basic: "40 € / 2h" },
       discounts: ["Kombinēts ar organizāciju –10 %"],
@@ -191,7 +182,10 @@ export const content = {
       discounts: { "majas-paligs": 0.1, "eko-tirisana": 0.05 },
       bio: "Es esmu Anna — pieredzējusi mājas palīdze ar uzmanību detaļām un tīrību.",
       certifications: ["Green Cleaning", "Organizācijas kurss"],
-      availability: { "2025-10-20": ["10:00", "14:00", "18:00"], "2025-10-21": ["09:00", "13:00"] },
+      availability: {
+        "2025-10-20": ["10:00", "14:00", "18:00"],
+        "2025-10-21": ["09:00", "13:00"],
+      },
     },
     {
       slug: "marija-karklina",
@@ -204,7 +198,10 @@ export const content = {
       discounts: { "majas-paligs": 0.08 },
       bio: "Sarunās mierīga un mērķtiecīga — mājas darbi un emocionālais atbalsts man ir svarīgs.",
       certifications: ["Emocionālā atbalsta kurss"],
-      availability: { "2025-10-20": ["12:00", "16:00"], "2025-10-22": ["10:00", "15:00"] },
+      availability: {
+        "2025-10-20": ["12:00", "16:00"],
+        "2025-10-22": ["10:00", "15:00"],
+      },
     },
     {
       slug: "dace-silmale",
@@ -217,7 +214,10 @@ export const content = {
       discounts: { "labsajutas-atbalsts": 0.10 },
       bio: "Ar smaidu un empātiju — emocionālais draugs un labsajūtas ceļabiedrs.",
       certifications: ["Mindfulness 1"],
-      availability: { "2025-10-21": ["11:00", "17:00"], "2025-10-23": ["10:00", "14:00"] },
+      availability: {
+        "2025-10-21": ["11:00", "17:00"],
+        "2025-10-23": ["10:00", "14:00"],
+      },
     },
     {
       slug: "zane-balode",
@@ -230,7 +230,10 @@ export const content = {
       discounts: { "radosais-partneris": 0.05 },
       bio: "Radoša dvēsele — kopā radīsim un runāsim par mākslu un dzīvi.",
       certifications: [],
-      availability: { "2025-10-20": ["14:00", "18:00"], "2025-10-22": ["16:00", "19:00"] },
+      availability: {
+        "2025-10-20": ["14:00", "18:00"],
+        "2025-10-22": ["16:00", "19:00"],
+      },
     },
     {
       slug: "martins-fix",
@@ -243,7 +246,10 @@ export const content = {
       discounts: { "nelieli-remontdarbi": 0.1 },
       bio: "Remontu meistars — droši, ātri un profesionāli.",
       certifications: ["Remontdarbu kurss"],
-      availability: { "2025-10-20": ["08:00", "13:00"], "2025-10-24": ["10:00", "14:00"] },
+      availability: {
+        "2025-10-20": ["08:00", "13:00"],
+        "2025-10-24": ["10:00", "14:00"],
+      },
     },
   ],
 };
