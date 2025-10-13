@@ -19,7 +19,7 @@ const ClientWelcome = () => {
           className="w-full h-48 object-cover rounded-lg mb-4"
         />
         
-        <h1 className="text-4xl font-bold text-foreground">
+        <h1 className="text-2xl md:text-3xl font-bold text-foreground">
           🎊 {content.clientRegistration.welcome.title}
         </h1>
         
