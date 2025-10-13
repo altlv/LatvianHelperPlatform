@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 // If "@/config/content" does not exist, you can delete this import;
 // the UI will still show the fallback title/subtitle below.
 // import { content } from "@/config/content";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-transparent.png";
 
 const Landing = () => {
   const navigate = useNavigate();
