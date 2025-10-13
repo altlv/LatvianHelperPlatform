@@ -252,4 +252,231 @@ export const content = {
       },
     },
   ],
+
+  helpCategories: {
+    title: "Meklēt Palīgu",
+    subtitle: "Izvēlies kategoriju, ar ko sākt",
+    backButton: "Atpakaļ",
+    cardHint: "Spied, lai redzētu pakalpojumus"
+  },
+
+  profile: {
+    title: "Mans profils",
+    name: "Vārds",
+    location: "Atrašanās vieta",
+    mailbox: "E-pasts",
+    interests: "Intereses",
+    history: "Rezervāciju vēsture",
+    reviews: "Atsauksmes",
+    editButton: "Rediģēt profilu",
+    supportButton: "Atbalsts"
+  },
+
+  clientRegistration: {
+    step1: {
+      title: "Reģistrācija klientam",
+      subtitle: "1. solis — Pamatinformācija",
+      fields: {
+        firstName: "Vārds",
+        lastName: "Uzvārds",
+        email: "E-pasta adrese",
+        phone: "Tālruņa numurs",
+        password: "Parole",
+        city: "Pilsēta",
+        photo: "Profila foto"
+      },
+      gdpr: "Piekrītu datu apstrādes noteikumiem (GDPR)",
+      ethics: "Piekrītu ētikas kodeksam",
+      nextButton: "Turpināt"
+    },
+    step2: {
+      title: "Reģistrācija klientam",
+      subtitle: "2. solis — Izvēlies kategorijas",
+      locationLabel: "Pilsēta/Reģions",
+      needsLabel: "Kāda veida palīdzība nepieciešama?",
+      categories: [
+        {
+          id: "household",
+          title: "Ikdienas saimnieciskie darbi",
+          subtitle: "Mājas darbi · organizēšana",
+          description: "Tīrīšana, kārtošana un sadzīves atbalsts",
+          icon: "🧺"
+        },
+        {
+          id: "health",
+          title: "Veselība un labsajūta",
+          subtitle: "Sports · relaksācija",
+          description: "Aktivitātes un labsajūta",
+          icon: "💪"
+        },
+        {
+          id: "social",
+          title: "Sociālais atbalsts",
+          subtitle: "Sarunas · emocionālais atbalsts",
+          description: "Sarunu biedri un emocionālais atbalsts",
+          icon: "🤗"
+        },
+        {
+          id: "practical",
+          title: "Praktiskie darbi",
+          subtitle: "Remonti · tehniska palīdzība",
+          description: "Nelieli remontdarbi un tehniska palīdzība",
+          icon: "🧰"
+        }
+      ],
+      nextButton: "Turpināt",
+      backButton: "Atpakaļ"
+    },
+    step3: {
+      title: "Reģistrācija klientam",
+      subtitle: "3. solis — Apstiprinājums",
+      confirmText: "Lūdzu, pārbaudi ievadītos datus:",
+      traits: [
+        "Sirsnīgs",
+        "Uzticams",
+        "Punktuāls",
+        "Empātisks",
+        "Profesionāls"
+      ],
+      notePlaceholder: "Papildu piezīmes vai īpašas vēlmes...",
+      submitButton: "Pabeigt reģistrāciju",
+      finishButton: "Pabeigt",
+      backButton: "Atpakaļ"
+    },
+    welcome: {
+      title: "Laipni lūgts!",
+      subtitle: "Reģistrācija pabeigta",
+      message: "Tagad tu vari sākt meklēt palīgu.",
+      button: "Sākt meklēt",
+      findHelperButton: "Meklēt palīgu",
+      profileButton: "Uz profilu"
+    }
+  },
+
+  helperRegistration: {
+    step1: {
+      title: "Reģistrācija palīgam",
+      subtitle: "1. solis — Pamatinformācija",
+      fields: {
+        firstName: "Vārds",
+        lastName: "Uzvārds",
+        email: "E-pasta adrese",
+        phone: "Tālruņa numurs",
+        password: "Parole",
+        city: "Pilsēta",
+        photo: "Profila foto",
+        id: "Personas apliecības numurs"
+      },
+      gdpr: "Piekrītu datu apstrādes noteikumiem (GDPR)",
+      ethics: "Piekrītu ētikas kodeksam",
+      nextButton: "Turpināt"
+    },
+    step2: {
+      title: "Reģistrācija palīgam",
+      subtitle: "2. solis — Ētikas kodekss",
+      specializationLabel: "Izvēlies savas specializācijas",
+      ethicsTitle: "Piekrītu ētikas kodeksam",
+      gdprTitle: "Piekrītu datu apstrādes noteikumiem (GDPR)",
+      ethicsSummary: "Ētikas kodeksa kopsavilkums",
+      ethicsText: "Kā palīgs tu apņemies būt cieņpilns, uzticams un profesionāls. Tu ievērosi konfidencialitāti, būsi punktuāls un rūpēsies par klientu labsajūtu.",
+      categories: [
+        "Mājas palīgs",
+        "Emocionālais atbalsts",
+        "Praktiskie darbi",
+        "Kultūras pavadīšana"
+      ],
+      nextButton: "Turpināt",
+      finishButton: "Turpināt",
+      backButton: "Atpakaļ"
+    },
+    step3: {
+      title: "Reģistrācija palīgam",
+      subtitle: "3. solis — Par sevi",
+      bioLabel: "Pastāsti par sevi",
+      bioPlaceholder: "Es esmu...",
+      experienceLabel: "Pieredze",
+      availabilityLabel: "Pieejamība",
+      categories: [
+        {
+          id: "household",
+          title: "Ikdienas saimnieciskie darbi",
+          description: "Mājas darbi, tīrīšana, organizēšana un bērnu aprūpe",
+          icon: "🧺"
+        },
+        {
+          id: "health",
+          title: "Veselība un labsajūta",
+          description: "Sports, treniņi, relaksācija un kustība",
+          icon: "💪"
+        },
+        {
+          id: "social",
+          title: "Sociālais atbalsts",
+          description: "Sarunas, hobiji un emocionālais atbalsts",
+          icon: "🤗"
+        },
+        {
+          id: "practical",
+          title: "Praktiskie darbi",
+          description: "Nelieli remontdarbi, tehniska palīdzība un dārzs",
+          icon: "🧰"
+        }
+      ],
+      fields: {
+        bio: "Par mani",
+        experience: "Pieredze",
+        availability: "Pieejamība"
+      },
+      nextButton: "Turpināt",
+      backButton: "Atpakaļ"
+    },
+    step4: {
+      title: "Apmācības",
+      subtitle: "Izvēlies savu ceļu",
+      message: "Lai kļūtu par palīgu, tev jāiziet verifikācija un apmācības.",
+      wantToLearn: {
+        title: "Vēlos mācīties",
+        description: "Izej apmācību kursu un kļūsti par sertificētu palīgu.",
+        button: "Uz apmācībām"
+      },
+      alreadyKnow: {
+        title: "Man jau ir zināšanas",
+        description: "Augšupielādē sertifikātus vai pieredzei",
+        note: "Mūsu komanda pārbaudīs tavus dokumentus.",
+        button: "Augšupielādēt dokumentus"
+      },
+      nextButton: "Uz apmācībām"
+    },
+    training: {
+      title: "Apmācības",
+      subtitle: "Obligātais kurss",
+      message: "Lūdzu, izej obligāto kursu, lai kļūtu par sertificētu palīgu.",
+      topics: [
+        "💬 Komunikācija",
+        "❤️ Empātija",
+        "🛡️ Drošība",
+        "📜 Ētikas kodekss"
+      ],
+      duration: "Ilgums: ~2 stundas",
+      note: "Kurss ir obligāts visiem palīgiem.",
+      modules: [
+        "Komunikācija",
+        "Empātija",
+        "Drošība",
+        "Ētikas kodekss"
+      ],
+      startButton: "Sākt kursu",
+      nextButton: "Pabeigt kursu",
+      profileButton: "Uz profilu"
+    },
+    welcome: {
+      title: "Apsveicam!",
+      subtitle: "Tu esi kļuvis par palīgu",
+      message: "Tagad tu vari sākt palīdzēt citiem.",
+      note: "Tagad tu vari izveidot savu profilu un sākt palīdzēt.",
+      button: "Uz profilu",
+      specializationButton: "Izvēlēties specializāciju",
+      profileButton: "Uz profilu"
+    }
+  }
 };
