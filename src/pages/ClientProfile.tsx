@@ -1,7 +1,17 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ClientProfile = () => {
+  const navigate = useNavigate();
+  
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate("/");
+    }
+  };
+
   // Mock data for demo - in production this would come from auth/database
   const clientData = {
     name: "Jānis Bērziņš",
@@ -17,8 +27,8 @@ const ClientProfile = () => {
     <div className="min-h-screen bg-background p-4">
       <div className="max-w-4xl mx-auto space-y-6 py-8">
         <div className="flex items-center justify-between">
-          <Button variant="ghost" asChild>
-            <Link to="/">← Sākums</Link>
+          <Button variant="ghost" onClick={handleBack}>
+            ← Atgriezties
           </Button>
         </div>
         
@@ -130,6 +140,9 @@ const ClientProfile = () => {
           </Button>
           <Button variant="outline" size="lg" className="rounded-full">
             Sazināties ar atbalstu
+          </Button>
+          <Button variant="ghost" onClick={handleBack}>
+            ← Atgriezties
           </Button>
         </div>
       </div>

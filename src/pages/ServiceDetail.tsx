@@ -44,6 +44,14 @@ const ServiceDetail = () => {
   const { categorySlug, serviceSlug } = useParams();
   const navigate = useNavigate();
 
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate("/");
+    }
+  };
+
   const category = content.categories.find((c) => c.id === categorySlug);
   const service = content.helpCards.find(
     (h) => h.slug === serviceSlug && h.categoryId === categorySlug
@@ -58,7 +66,7 @@ const ServiceDetail = () => {
             Lūdzu, atgriezies un mēģini vēlreiz.
           </p>
           <div className="flex gap-3 justify-center">
-            <Button variant="outline" onClick={() => navigate(-1)}>
+            <Button variant="outline" onClick={handleBack}>
               ← Atpakaļ
             </Button>
             <Button asChild>
