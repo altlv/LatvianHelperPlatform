@@ -655,27 +655,33 @@ export const content = {
       categories: [
         {
           id: "household",
-          title: "Ikdienas saimnieciskie darbi",
-          description: "Mājas darbi, tīrīšana, organizēšana un bērnu aprūpe",
-          icon: "🧺"
+          title: "🧺 Ikdienas saimnieciskie darbi",
+          description: "Tīrīšana, kārtošana, organizēšana, bērnu aprūpe un sadzīves atbalsts — ikdienas atvieglojums mājās.",
+          icon: "🏠"
         },
         {
           id: "health",
-          title: "Veselība un labsajūta",
-          description: "Sports, treniņi, relaksācija un kustība",
-          icon: "💪"
+          title: "💪 Veselība un labsajūta",
+          description: "Aktivitātes, treniņi, elpošanas prakses un labsajūta — rūpe par ķermeni un prātu.",
+          icon: "💚"
         },
         {
           id: "social",
-          title: "Sociālais atbalsts",
-          description: "Sarunas, hobiji un emocionālais atbalsts",
+          title: "🎨 Sociālais un radošais atbalsts",
+          description: "Sarunu biedri, kopīgas radošas aktivitātes un emocionālais atbalsts — kopā kļūstam spēcīgāki.",
           icon: "🤗"
         },
         {
           id: "practical",
-          title: "Praktiskie darbi",
-          description: "Nelieli remontdarbi, tehniska palīdzība un dārzs",
-          icon: "🧰"
+          title: "🧰 Praktiskie darbi",
+          description: "Nelieli remontdarbi, tehniska palīdzība un dārzs — praktiska atbalsta projekti mājoklī.",
+          icon: "🔧"
+        },
+        {
+          id: "culture",
+          title: "🎭 Kultūra un sabiedrība",
+          description: "Pavadīšana uz kultūras notikumiem, intelektuālas sarunas, kopīgas aktivitātes sabiedrībā.",
+          icon: "🎭"
         }
       ],
       fields: {
