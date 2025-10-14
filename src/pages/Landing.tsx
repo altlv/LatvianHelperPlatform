@@ -114,10 +114,14 @@ const Landing = () => {
           {/* Attīstība un izglītība */}
           <div>
             <h2 className="text-3xl font-bold text-[#D4AF37] mb-4">🎓 Attīstība un izglītība</h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Mūsu apmācības ir radītas kā <strong>praktiska, mūža ilguma izglītības programma</strong> — vienotas kvalitātes, ikdienā izmantojamas zināšanas. Katra Palīga ceļš ir arī izaugsmes ceļš: no pamatprasmēm līdz profesionālām zināšanām.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Tās aptver plašu tēmu loku, tostarp: pirmās palīdzības pamatus, digitālo pratību, mājturību un amatniecību, komunikāciju un klientu apkalpošanu, datu drošību un lietvedību, emocionālo inteliģenci un empātiju, ētiku un konfidencialitāti, kā arī kultūru un vēsturi. Papildus moduļi tiks pielāgoti pēc izvēlētās specializācijas un pieredzes līmeņa.
+            </p>
             <p className="text-foreground/80 leading-relaxed">
-              Katrs Palīgs var piedalīties <strong>Žaņu akadēmijas apmācībās</strong> — komunikācija,
-              sociālais darbs, improvizācija, pašaizsardzība un praktiskās iemaņas. <br />
-              🎓 Palīdzība kļūst par profesiju. Pieredze kļūst par izaugsmi.
+              👉 Apmācībās palīdzība pārvēršas par aicinājumu, pieredze — par ieguldījumu sabiedrībā.
             </p>
           </div>
 
