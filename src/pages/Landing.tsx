@@ -78,9 +78,9 @@ const Landing = () => {
 
           {/* Disclaimer */}
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto mt-6">
-            Atbalsta un tālākizglītības platforma sirsnīgiem cilvēkiem, kuri vēlas būt
-            noderīgi un kļūt par palīgu vai arī meklē sev palīdzību dažādās ikdienas
-            situācijās.
+            Atbalsta un tālākizglītības platforma sirsnīgiem cilvēkiem, <br />
+            kuri vēlas būt noderīgi un kļūt par palīgu <br />
+            vai arī meklē sev palīdzību dažādās ikdienas situācijās.
           </p>
         </div>
       </section>  {/* ← CLOSE the hero section before starting the next one */}
