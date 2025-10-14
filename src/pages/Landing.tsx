@@ -27,8 +27,8 @@ const Landing = () => {
           </h1>
 
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            {/* {content?.landing?.subtitle ?? "Tava drošā vieta, kur cilvēki palīdz viens otram – ar sirdi, prasmēm un cieņu."} */}
-            Tava drošā vieta, kur cilvēki palīdz viens otram – ar sirdi, prasmēm un cieņu.
+            {/* {content?.landing?.subtitle ?? "Tava drošā vieta, kur cilvēki palīdz viens otram — ar spējām, prasmēm un talantiem"} */}
+            Tava drošā vieta, kur cilvēki palīdz viens otram — ar spējām, prasmēm un talantiem
           </p>
 
           {/* Registration & Demo Section */}
@@ -77,7 +77,7 @@ const Landing = () => {
           </div>
 
           {/* Disclaimer */}
-          <p className="text-sm text-foreground/70 max-w-2xl mx-auto mt-6">
+          <p className="text-xl text-foreground/80 max-w-2xl mx-auto mt-6">
             Atbalsta un tālākizglītības platforma sirsnīgiem cilvēkiem, kuri vēlas būt
             noderīgi un kļūt par palīgu vai arī meklē sev palīdzību dažādās ikdienas
             situācijās.
