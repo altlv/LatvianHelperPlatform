@@ -553,31 +553,38 @@ export const content = {
       categories: [
         {
           id: "household",
-          title: "Ikdienas saimnieciskie darbi",
-          subtitle: "Mājas darbi · organizēšana",
-          description: "Tīrīšana, kārtošana un sadzīves atbalsts",
-          icon: "🧺"
+          title: "🧺 Ikdienas saimnieciskie darbi",
+          subtitle: "Mājas darbi · organizēšana · bērnu aprūpe · iepirkumi",
+          description: "Tīrīšana, kārtošana, organizēšana, bērnu aprūpe un sadzīves atbalsts — ikdienas atvieglojums mājās.",
+          icon: "🏠"
         },
         {
           id: "health",
-          title: "Veselība un labsajūta",
-          subtitle: "Sports · relaksācija",
-          description: "Aktivitātes un labsajūta",
-          icon: "💪"
+          title: "💪 Veselība un labsajūta",
+          subtitle: "Sports · relaksācija · kustība",
+          description: "Aktivitātes, treniņi, elpošanas prakses un labsajūta — rūpe par ķermeni un prātu.",
+          icon: "💚"
         },
         {
           id: "social",
-          title: "Sociālais atbalsts",
-          subtitle: "Sarunas · emocionālais atbalsts",
-          description: "Sarunu biedri un emocionālais atbalsts",
+          title: "🎨 Sociālais un radošais atbalsts",
+          subtitle: "Sarunas · hobiji · emocionālais atbalsts",
+          description: "Sarunu biedri, kopīgas radošas aktivitātes un emocionālais atbalsts — kopā kļūstam spēcīgāki.",
           icon: "🤗"
         },
         {
           id: "practical",
-          title: "Praktiskie darbi",
-          subtitle: "Remonti · tehniska palīdzība",
-          description: "Nelieli remontdarbi un tehniska palīdzība",
-          icon: "🧰"
+          title: "🧰 Praktiskie darbi",
+          subtitle: "Remonti · tehniska palīdzība · dārzs",
+          description: "Nelieli remontdarbi, tehniska palīdzība un dārzs — praktiska atbalsta projekti mājoklī.",
+          icon: "🔧"
+        },
+        {
+          id: "culture",
+          title: "🎭 Kultūra un sabiedrība",
+          subtitle: "Pasākumi · sarunas · kopīgas aktivitātes",
+          description: "Pavadīšana uz kultūras notikumiem, intelektuālas sarunas, kopīgas aktivitātes sabiedrībā.",
+          icon: "🎭"
         }
       ],
       nextButton: "Turpināt",
