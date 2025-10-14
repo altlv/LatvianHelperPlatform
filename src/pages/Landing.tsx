@@ -177,7 +177,7 @@ const Landing = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-foreground/10">
+      <footer className="py-8 pb-20 border-t border-foreground/10">
         <div className="flex flex-wrap justify-center gap-6 text-sm text-foreground/70">
           <Link to="/ethics">Ētikas kodekss</Link>
           <Link to="/privacy">Privātuma politika</Link>
