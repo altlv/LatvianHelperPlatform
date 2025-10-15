@@ -19,7 +19,32 @@ const ClientProfile = () => {
     location: "Rīga, Latvija",
     email: "janis.berzins@example.com",
     interests: ["Ikdienas palīdzība", "Sports", "Kultūra"],
-    reservationHistory: [],
+    reservationHistory: [
+      {
+        id: 1,
+        service: "Ekoloģiska tīrīšana",
+        helperName: "Liga Kalniņa",
+        date: "2024-10-08",
+        status: "Pabeigts",
+        feedback: "Liga bija ļoti rūpīga un profesionāla! Māja izskatās lieliski. Paldies!"
+      },
+      {
+        id: 2,
+        service: "Palīdzība sadzīvē",
+        helperName: "Kristīne Eglīte",
+        date: "2024-09-22",
+        status: "Pabeigts",
+        feedback: "Kristīne man palīdzēja ar iepirkšanos un virtuvē. Ļoti laipna un uzmanīga!"
+      },
+      {
+        id: 3,
+        service: "Emocionāls atbalsts",
+        helperName: "Anna Lapiņa",
+        date: "2024-09-10",
+        status: "Pabeigts",
+        feedback: "Anna ir brīnišķīga klausītāja. Pēc tikšanās jutos daudz labāk. Sirsnīgi iesaku!"
+      }
+    ],
     reviews: [],
     unreadMessages: 0
   };
@@ -96,7 +121,7 @@ const ClientProfile = () => {
             Atrod piemērotu palīgu savām vajadzībām
           </p>
           <Button asChild size="lg">
-            <Link to="/search">Skatīt palīgu kategorijas</Link>
+            <Link to="/search">Meklēt palīgu</Link>
           </Button>
         </div>
 
@@ -105,19 +130,27 @@ const ClientProfile = () => {
           <h2 className="text-xl font-semibold">🗓️ Rezervāciju vēsture</h2>
           {clientData.reservationHistory.length > 0 ? (
             <div className="space-y-3">
-              {clientData.reservationHistory.map((reservation: any, idx: number) => (
-                <div key={idx} className="p-3 border border-border rounded-lg">
-                  <p className="font-medium">{reservation.service}</p>
-                  <p className="text-sm text-muted-foreground">{reservation.date}</p>
+              {clientData.reservationHistory.map((reservation: any) => (
+                <div key={reservation.id} className="p-4 border border-border rounded-lg space-y-2">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <p className="font-semibold text-foreground">{reservation.service}</p>
+                      <p className="text-sm text-muted-foreground">Palīgs: {reservation.helperName}</p>
+                      <p className="text-sm text-muted-foreground">{reservation.date}</p>
+                    </div>
+                    <span className="px-2 py-1 bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400 rounded text-xs font-medium">
+                      {reservation.status}
+                    </span>
+                  </div>
+                  <div className="pt-2 border-t border-border">
+                    <p className="text-sm text-muted-foreground italic">💬 "{reservation.feedback}"</p>
+                  </div>
                 </div>
               ))}
             </div>
           ) : (
             <div className="text-center py-8">
-              <p className="text-foreground/70 mb-4">Nav iepriekšēju rezervāciju</p>
-              <Button asChild>
-                <Link to="/search">Rezervēt palīgu</Link>
-              </Button>
+              <p className="text-foreground/70">Nav iepriekšēju rezervāciju</p>
             </div>
           )}
         </div>
