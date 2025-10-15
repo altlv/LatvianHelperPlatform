@@ -45,7 +45,23 @@ const ClientProfile = () => {
         feedback: "Anna ir brīnišķīga klausītāja. Pēc tikšanās jutos daudz labāk. Sirsnīgi iesaku!"
       }
     ],
-    reviews: [],
+    reviews: [
+      {
+        helperName: "Liga Kalniņa",
+        rating: 5,
+        comment: "Jānis bija ļoti laipns un saprotošs klients. Viņš skaidri izskaidroja, ko vēlas, un novērtēja darbu. Prieks strādāt!"
+      },
+      {
+        helperName: "Kristīne Eglīte",
+        rating: 5,
+        comment: "Brīnišķīgs klients! Vienmēr pieklājīgs un pateicīgs. Iesaku visiem palīgiem!"
+      },
+      {
+        helperName: "Anna Lapiņa",
+        rating: 5,
+        comment: "Jānis ir sirsnīgs un cienījams cilvēks. Bija patīkami viņam palīdzēt. Paldies par uzticēšanos!"
+      }
+    ],
     unreadMessages: 0
   };
 
