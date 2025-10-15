@@ -181,7 +181,7 @@ export const content = {
       defaultPrice: 35,
       discounts: { "majas-paligs": 0.1, "eko-tirisana": 0.05 },
       bio: "Es esmu Anna — pieredzējusi mājas palīdze ar uzmanību detaļām un tīrību.",
-      certifications: ["Green Cleaning", "Organizācijas kurss"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Green Cleaning", "Organizācijas kurss"],
       availability: {
         "2025-10-20": ["10:00", "14:00", "18:00"],
         "2025-10-21": ["09:00", "13:00"],
@@ -217,7 +217,7 @@ export const content = {
       defaultPrice: 40,
       discounts: { "majas-paligs": 0.08 },
       bio: "Sarunās mierīga un mērķtiecīga — mājas darbi un emocionālais atbalsts man ir svarīgs.",
-      certifications: ["Emocionālā atbalsta kurss"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Emocionālā atbalsta kurss"],
       availability: {
         "2025-10-20": ["12:00", "16:00"],
         "2025-10-22": ["10:00", "15:00"],
@@ -247,7 +247,7 @@ export const content = {
       defaultPrice: 28,
       discounts: { "labsajutas-atbalsts": 0.10 },
       bio: "Ar smaidu un empātiju — emocionālais draugs un labsajūtas ceļabiedrs.",
-      certifications: ["Mindfulness 1"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Mindfulness 1"],
       availability: {
         "2025-10-21": ["11:00", "17:00"],
         "2025-10-23": ["10:00", "14:00"],
@@ -283,7 +283,7 @@ export const content = {
       defaultPrice: 30,
       discounts: { "radosais-partneris": 0.05, "pasakumu-pavadisana": 0.08 },
       bio: "Radoša dvēsele — kopā radīsim un runāsim par mākslu un dzīvi.",
-      certifications: [],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis"],
       availability: {
         "2025-10-20": ["14:00", "18:00"],
         "2025-10-22": ["16:00", "19:00"],
@@ -313,7 +313,7 @@ export const content = {
       defaultPrice: 50,
       discounts: { "nelieli-remontdarbi": 0.1 },
       bio: "Remontu meistars — droši, ātri un profesionāli.",
-      certifications: ["Remontdarbu kurss"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Remontdarbu kurss"],
       availability: {
         "2025-10-20": ["08:00", "13:00"],
         "2025-10-24": ["10:00", "14:00"],
@@ -343,7 +343,7 @@ export const content = {
       defaultPrice: 32,
       discounts: { "skapju-kartosana": 0.12 },
       bio: "Organizācija ir mans elements — palīdzēšu izveidot kārtību un harmoniju jūsu mājās.",
-      certifications: ["Profesionālā organizatora kurss", "KonMari metode"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Profesionālā organizatora kurss", "KonMari metode"],
       availability: {
         "2025-10-21": ["10:00", "14:00", "16:00"],
         "2025-10-23": ["09:00", "15:00"],
@@ -379,7 +379,7 @@ export const content = {
       defaultPrice: 28,
       discounts: { "fitnesa-draugs": 0.15 },
       bio: "Sporta entuziasts ar pieredzi personālā trenera darbā — motivēšu un palīdzēšu sasniegt tavus mērķus.",
-      certifications: ["Personālā trenera sertifikāts", "Joga instruktors"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Personālā trenera sertifikāts", "Joga instruktors"],
       availability: {
         "2025-10-20": ["07:00", "12:00", "17:00"],
         "2025-10-22": ["08:00", "18:00"],
@@ -415,7 +415,7 @@ export const content = {
       defaultPrice: 27,
       discounts: { "emocionalais-draugs": 0.08, "pasakumu-pavadisana": 0.10 },
       bio: "Empātiska klausītāja un radoša dvēsele — varu būt gan draugs grūtākos brīžos, gan iedvesmotājs jauniem piedzīvojumiem.",
-      certifications: ["Aktīvās klausīšanās kurss", "Art therapy pamati"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Aktīvās klausīšanās kurss", "Art therapy pamati"],
       availability: {
         "2025-10-21": ["11:00", "15:00", "19:00"],
         "2025-10-24": ["10:00", "14:00"],
@@ -451,7 +451,7 @@ export const content = {
       defaultPrice: 45,
       discounts: {},
       bio: "IT speciālists ar prasmi arī praktiskos darbos — palīdzēšu ar sīkajiem remontiem un tehnoloģiju lietošanu.",
-      certifications: ["IT tehniķis", "Elektrodrošības kurss"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "IT tehniķis", "Elektrodrošības kurss"],
       availability: {
         "2025-10-20": ["14:00", "18:00"],
         "2025-10-23": ["16:00", "20:00"],
@@ -481,7 +481,7 @@ export const content = {
       defaultPrice: 30,
       discounts: { "labsajutas-atbalsts": 0.12, "fitnesa-draugs": 0.08 },
       bio: "Veselīga dzīvesveida entuzijaste — palīdzēšu uzlabot gan fizisko, gan garīgo labsajūtu.",
-      certifications: ["Wellness Coach", "Meditācijas instruktore", "Uztura padomniece"],
+      certifications: ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Wellness Coach", "Meditācijas instruktore", "Uztura padomniece"],
       availability: {
         "2025-10-22": ["09:00", "13:00", "17:00"],
         "2025-10-24": ["10:00", "15:00"],

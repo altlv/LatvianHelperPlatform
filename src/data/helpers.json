@@ -8,7 +8,7 @@
     "online": true,
     "specializations": ["Mājas palīgs", "Organizēšana", "Iepirkšanās asistents"],
     "about": "Īpaša uzmanība detaļām, mierīga un precīza komunikācija. Palīdzu uzturēt kārtību un radīt sistēmu ikdienā.",
-    "certs": ["Mājsaimniecības tehniskā palīdzība", "Pirmās palīdzības pamati"],
+    "certs": ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Mājsaimniecības tehniskā palīdzība", "Pirmās palīdzības pamati"],
     "services": [
       {"title":"Mājas palīgs (2h)","price":"35 €"},
       {"title":"Mājas palīgs (4h)","price":"60 €"}
@@ -30,7 +30,7 @@
     "online": false,
     "specializations": ["Eko tīrīšana", "Skapju kārtošana"],
     "about": "Tīrīšana ar videi draudzīgiem līdzekļiem un ilgtspējīgu pieeju.",
-    "certs": ["Eko tīrīšanas pamati"],
+    "certs": ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Eko tīrīšanas pamati"],
     "services": [
       {"title":"Eko mājas tīrīšana (2h)","price":"40 €"},
       {"title":"Skapju kārtošana (h)","price":"30 €"}
@@ -49,7 +49,7 @@
     "online": true,
     "specializations": ["Rutīnas organizēšana", "Senioru atbalsts"],
     "about": "Palīdz ikdienas rutīnā, veido mierīgu ritmu un drošu vidi.",
-    "certs": ["Komunikācija un empātija"],
+    "certs": ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Komunikācija un empātija"],
     "services": [{"title":"Rutīnas organizēšana (h)","price":"28 €"}],
     "discounts": [],
     "availability": ["Pirmdiena 10:00–16:00","Ceturtdiena 9:00–12:00"],
@@ -65,7 +65,7 @@
     "online": true,
     "specializations": ["Praktiskie darbi", "Telpu organizēšana"],
     "about": "Nelieli remonti un kārtošana: garāžas, pieliekamie, mēbeļu salikšana.",
-    "certs": ["Pamata drošība praktiskos darbos", "Pirmā palīdzība"],
+    "certs": ["Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis", "Pamata drošība praktiskos darbos", "Pirmā palīdzība"],
     "services": [
       {"title":"Nelieli remontdarbi (2h)","price":"40 €"},
       {"title":"Telpu organizēšana (h)","price":"30 €"}
