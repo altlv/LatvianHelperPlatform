@@ -38,7 +38,7 @@ const HelperTraining = () => {
 
           <div className="flex flex-col gap-3 pt-4">
             <Button asChild size="lg" className="rounded-full">
-              <Link to="/register/helper/welcome">{training.startButton}</Link>
+              <Link to="/register/helper/training/course">{training.startButton}</Link>
             </Button>
             
             <Button asChild variant="outline" size="lg" className="rounded-full">

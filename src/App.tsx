@@ -20,6 +20,8 @@ import HelperStep2 from "./pages/register/HelperStep2";
 import HelperStep3 from "./pages/register/HelperStep3";
 import HelperStep4 from "./pages/register/HelperStep4";
 import HelperTraining from "./pages/register/HelperTraining";
+import TrainingCourse from "./pages/register/TrainingCourse";
+import TrainingLesson from "./pages/register/TrainingLesson";
 import HelperWelcome from "./pages/register/HelperWelcome";
 
 import ClientProfile from "./pages/ClientProfile";
@@ -62,6 +64,8 @@ const App = () => (
           <Route path="/register/helper/step3" element={<HelperStep3 />} />
           <Route path="/register/helper/step4" element={<HelperStep4 />} />
           <Route path="/register/helper/training" element={<HelperTraining />} />
+          <Route path="/register/helper/training/course" element={<TrainingCourse />} />
+          <Route path="/register/helper/training/lesson/:lessonId" element={<TrainingLesson />} />
           <Route path="/register/helper/welcome" element={<HelperWelcome />} />
 
           {/* Profile pages */}
