@@ -86,10 +86,18 @@ const ClientProfile = () => {
                 </span>
               ))}
             </div>
-            <Button variant="outline" className="mt-3" asChild>
-              <Link to="/search">Meklēt palīgus</Link>
-            </Button>
           </div>
+        </div>
+
+        {/* Search for Helpers */}
+        <div className="bg-card border border-border rounded-2xl p-6 space-y-4">
+          <h2 className="text-xl font-semibold">🔍 Meklēt palīgus</h2>
+          <p className="text-muted-foreground">
+            Atrod piemērotu palīgu savām vajadzībām
+          </p>
+          <Button asChild size="lg">
+            <Link to="/search">Skatīt palīgu kategorijas</Link>
+          </Button>
         </div>
 
         {/* Reservation History */}
