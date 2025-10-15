@@ -29,6 +29,16 @@ const HelperStep1 = () => {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="max-w-md w-full space-y-6">
+        <div className="flex items-center justify-center mb-2">
+          <Button
+            variant="ghost"
+            onClick={() => navigate("/")}
+            className="mr-auto"
+          >
+            ← Atpakaļ
+          </Button>
+        </div>
+        
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold text-foreground">
             {content.helperRegistration.step1.title}

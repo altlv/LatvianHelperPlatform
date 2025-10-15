@@ -20,6 +20,16 @@ const HelperStep2 = () => {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="max-w-2xl w-full space-y-6">
+        <div className="flex items-center justify-center mb-2">
+          <Button
+            variant="ghost"
+            onClick={() => navigate(-1)}
+            className="mr-auto"
+          >
+            ← Atpakaļ
+          </Button>
+        </div>
+        
         <h1 className="text-3xl font-bold text-center text-foreground">
           {step2.title}
         </h1>
