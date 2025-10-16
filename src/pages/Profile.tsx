@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import annaLapinaImg from "@/assets/helpers/anna-lapina.jpg";
+import Header from "@/components/Header";
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -57,14 +58,13 @@ const Profile = () => {
   return (
     <div className="min-h-screen bg-background p-6">
       <div className="max-w-4xl mx-auto space-y-8">
-        {/* Back Button */}
-        <Button variant="ghost" onClick={handleBack}>
-          ← Atgriezties
-        </Button>
+        <Header title="Mans profils" showBack={true} />
         
-        <h1 className="text-3xl font-bold text-center text-foreground">
-          Mans profils
-        </h1>
+        <div className="text-center">
+          <Button variant="outline" asChild>
+            <Link to="/">← Uz sākumlapu</Link>
+          </Button>
+        </div>
 
         {/* Profile Header */}
         <div className="bg-card border border-border rounded-2xl p-8 space-y-4">
