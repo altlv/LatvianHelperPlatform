@@ -12,7 +12,7 @@ const Profile = () => {
     city: "Rīga",
     email: "anna.lapina@example.com",
     specializations: ["Mājas palīgs", "Eko tīrīšana", "Skapju kārtošana"],
-    certifications: ["Green Cleaning", "Organizācijas kurss"],
+    certifications: ["Green Cleaning", "Organizācijas kurss", "Žaņa Akadēmijas pamata sertifikāts: Pakalpojumu sniedzējs – 1. līmenis"],
     defaultPrice: 35,
     completedJobs: 47,
     totalEarnings: 1245,
