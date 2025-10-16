@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import Header from "@/components/Header";
 
 const ProfileEdit = () => {
   const navigate = useNavigate();
@@ -37,12 +38,7 @@ const ProfileEdit = () => {
   return (
     <div className="min-h-screen bg-background p-4">
       <div className="max-w-3xl mx-auto space-y-6 py-8">
-        <div className="flex items-center justify-between">
-          <h1 className="text-3xl font-bold text-foreground">Rediģēt profilu</h1>
-          <Button variant="ghost" onClick={() => navigate("/profile")}>
-            Atcelt
-          </Button>
-        </div>
+        <Header title="Rediģēt profilu" showBack={true} />
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="bg-card border border-border rounded-2xl p-6 space-y-6">
